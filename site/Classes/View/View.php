@@ -24,4 +24,14 @@ class View
         $this->$param = $value;
     }
 
+    /**
+     * Requiring the Layouts of the parameter give
+     *
+     * @param $param
+     */
+    public function render($param){
+        $param = strtolower($param);
+        require LAYOUTS . $param . '.php';
+    }
+
 }
