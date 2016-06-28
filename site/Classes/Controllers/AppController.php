@@ -41,4 +41,10 @@ class AppController
             $this->logout();
         }
     }
+
+    
+    public function saveSessionToken(){
+        $session = ObjectFactoryService::getSession();
+        $session->save(['token' => $this->form->getField('token')->getValue()]);
+    }
 }
