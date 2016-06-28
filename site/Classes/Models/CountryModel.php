@@ -12,7 +12,10 @@ class CountryModel implements ModelInteface
     {
         $this->db=$pdo;
     }
-    
+
+    /**
+     * @return mixed
+     */
     public function getCountries(){
         $sql = 'SELECT `name` FROM country';
         try{
