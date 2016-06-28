@@ -19,4 +19,12 @@ class StringLength implements ValidatorInterface
         return false;
     }
 
+    /**
+     * @param mixed $maximum
+     */
+    public function setMaximum($maximum)
+    {
+        $this->maximum = $maximum;
+    }
+
 }
