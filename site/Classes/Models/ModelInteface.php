@@ -4,5 +4,5 @@
  * Interface ModelInteface
  */
 interface ModelInteface{
-    public function __construct();
+    public function __construct($pdo);
 }
