@@ -21,4 +21,15 @@ class Session
             $this->session[$key] = $value;
         }
     }
+
+    /**
+     * Gets data from the session
+     *
+     * @param null $key
+     * @return bool
+     */
+    public function get($key = null){
+        if (!$this->session && !$key) return false;
+        return $this->session[$key];
+    }
 }
