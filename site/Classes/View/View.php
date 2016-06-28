@@ -14,4 +14,14 @@ class View
         $this->results = $results;
     }
 
+    /**
+     * Add a new property to the Class
+     *
+     * @param $param
+     * @param $value
+     */
+    public function set($param,$value){
+        $this->$param = $value;
+    }
+
 }
