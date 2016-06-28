@@ -61,4 +61,14 @@ abstract class ObjectFactoryService{
         }
         return self::$session;
     }
+
+    /**
+     * @param $form
+     * @param $model
+     * @return bool
+     */
+    public static function getForm($form,$model){
+        if(!$form && $model) return false;
+        return new $form($model);
+    }
 }
