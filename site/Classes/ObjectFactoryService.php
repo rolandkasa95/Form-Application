@@ -52,4 +52,13 @@ abstract class ObjectFactoryService{
         return self::$models[$model];
     }
 
+    /**
+     * @return Session
+     */
+    public static function getSession(){
+        if (!self::$session){
+            self::$session = new Session();
+        }
+        return self::$session;
+    }
 }
