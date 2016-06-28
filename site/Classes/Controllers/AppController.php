@@ -57,4 +57,12 @@ class AppController
             $this->view->render('invalid');
         }
     }
+
+    public function logout(){
+        $session = ObjectFactoryService::getSession();
+        $session->destroy();
+        $url = strip_tags($_SERVER['HTTP_REFERER']);
+        header("Location: $url");
+        exit;
+    }
 }
