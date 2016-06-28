@@ -35,4 +35,13 @@ class StringLength implements ValidatorInterface
         $this->minimum = $minimum;
     }
 
+    /**
+     * @param null $data
+     */
+    public function setValues($data = null){
+        foreach ($data as $key => $value){
+            $this->$key = $value;
+        }
+    }
+
 }
