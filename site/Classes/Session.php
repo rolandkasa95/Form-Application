@@ -32,4 +32,12 @@ class Session
         if (!$this->session && !$key) return false;
         return $this->session[$key];
     }
+
+
+    /**
+     * Destroy session
+     */
+    public function destroy(){
+        unset($this->session);
+    }
 }
