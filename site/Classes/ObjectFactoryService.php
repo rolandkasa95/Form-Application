@@ -29,4 +29,11 @@ abstract class ObjectFactoryService{
         }
         return self::$pdo;
     }
+
+    public static function getConfig(){
+        if (!self::$config){
+            self::$config = require 'Config/config.php';
+        }
+        return self::$config;
+    }
 }
