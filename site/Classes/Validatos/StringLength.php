@@ -27,4 +27,12 @@ class StringLength implements ValidatorInterface
         $this->maximum = $maximum;
     }
 
+    /**
+     * @param mixed $minimum
+     */
+    public function setMinimum($minimum)
+    {
+        $this->minimum = $minimum;
+    }
+
 }
