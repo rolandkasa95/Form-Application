@@ -42,9 +42,19 @@ class AppController
         }
     }
 
-    
+
     public function saveSessionToken(){
         $session = ObjectFactoryService::getSession();
         $session->save(['token' => $this->form->getField('token')->getValue()]);
+    }
+
+    public function login(){
+        $user = $this->models['user']->autenticate($this->form->getData());
+        if(!empty($user)){
+            $this->view->user = $user;
+            $this->view->render('welcome');
+        }else{
+            $this->view->render('invalid');
+        }
     }
 }
