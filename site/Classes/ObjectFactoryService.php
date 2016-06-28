@@ -4,7 +4,7 @@ abstract class ObjectFactoryService{
     public static $pdo;
     public static $session;
     public static $config;
-    public static $model = [];
+    public static $models = [];
 
 
     /**
@@ -30,10 +30,26 @@ abstract class ObjectFactoryService{
         return self::$pdo;
     }
 
+    /**
+     * @return mixed
+     */
     public static function getConfig(){
         if (!self::$config){
             self::$config = require 'Config/config.php';
         }
         return self::$config;
     }
+
+    /**
+     * @param $model
+     * @param $config
+     * @return mixed
+     */
+    public static function getModel($model,$config){
+        if (!isset(self::$models[$model])){
+            self::$models[$model] = new $model(self::getDb($config));
+        };
+        return self::$models[$model];
+    }
+
 }
