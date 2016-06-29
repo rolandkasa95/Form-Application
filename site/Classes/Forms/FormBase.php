@@ -63,7 +63,14 @@ abstract class FormBase
                 $field['name'] ? $newField->setName($field['name']) :null;
                 $field['validator'] ? $newField->setValidator($field['validator']) : null;
                 break;
-            
+            case 'password':
+                require_once CLASSES . 'Forms/Input/Password.php';
+                $newField = new Password();
+                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['label'] ? $newField->setLabel($field['label']) : null;
+                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                break;
         }
     }
 }
