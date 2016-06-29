@@ -48,4 +48,38 @@ class Option
         return $this;
     }
 
+     /**
+     * @return mixed
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * @param $label
+     * @return $this
+     */
+    public function setLabel($label){
+        $this->label = $label;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isDisabled()
+    {
+        return $this->disabled;
+    }
+
+    /**
+     * @param boolean $disabled
+     * @return $this
+     */
+    public function setDisabled($disabled)
+    {
+        $this->disabled = $disabled;
+        return $this;
+    }
 }

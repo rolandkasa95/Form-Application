@@ -120,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="821">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -354,14 +354,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="6723000" />
-    </task>
-    <task id="LOCAL-00012" summary="Update: using the getOpStatus function">
-      <created>1467035188489</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1467035188489</updated>
+      <workItem from="1467198775988" duration="6834000" />
     </task>
     <task id="LOCAL-00013" summary="Update: abstract VehicleBase class cannot be instantiated as an object">
       <created>1467035417373</created>
@@ -699,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467205477725</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="New: added Input/Options: getOptionString + setOptionString">
+      <created>1467205569923</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1467205569923</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17320000" />
+    <option name="totallyTimeSpent" value="17431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -761,7 +761,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormBase: validate" />
     <MESSAGE value="New: added FormBase: getFields" />
     <MESSAGE value="New: added FormBase: getField" />
     <MESSAGE value="New: added FormBase: setField + getEndTag" />
@@ -786,7 +785,8 @@
     <MESSAGE value="New: added Input/Hidden: __construct() + getInput" />
     <MESSAGE value="New: added Input/Options" />
     <MESSAGE value="New: added Input/Options: getOption + getOptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options: getOption + getOptions" />
+    <MESSAGE value="New: added Input/Options: getOptionString + setOptionString" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options: getOptionString + setOptionString" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -955,7 +955,7 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
           <folding />
         </state>
       </provider>
