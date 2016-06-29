@@ -78,5 +78,38 @@ class RegisterForm extends FormCommon implements FormInterface
                 'required',
             ],
         ]);
+
+        $this->addField([
+           'label' => 'Email',
+            'type' => 'text',
+            'name' => 'email',
+            'priority' => 5,
+            'required' => true,
+            'value' => '',
+            'validators' => [
+                'email',
+                'required',
+            ],
+        ]);
+
+        $countries = $this->models['country']->getCountries();
+        $this->addField([
+            'label' => 'Contact By Email',
+            'type' => 'checkbox',
+            'name' => 'email_preferred_contact',
+            'priority' => 6,
+            'required' => true,
+            'value' => false,
+            'options' => $countries,
+            'validator' => [
+                'InArray' => $countries,
+                'required',
+            ],
+        ]);
+
+        $button = $this->getField('Submit');
+        $button->setValue('register');
+
+        ksort($this->fields);
     }
 }

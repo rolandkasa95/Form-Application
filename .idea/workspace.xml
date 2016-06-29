@@ -89,8 +89,8 @@
       <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+            <state relative-caret-position="731">
+              <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -232,7 +232,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="3964000" />
+      <workItem from="1467198775988" duration="4288000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -535,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467202569101</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="New: added RegisterForm: FirstName + LastName">
+      <created>1467202752229</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1467202752229</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14561000" />
+    <option name="totallyTimeSpent" value="14885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -597,7 +604,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: created the View Class" />
     <MESSAGE value="New: View class implemented" />
     <MESSAGE value="New: Autoloader Class added&#10;" />
     <MESSAGE value="New: init function added, aoutoloads the paths given by the config file&#10;" />
@@ -622,7 +628,8 @@
     <MESSAGE value="New: added LoginForm: __construct()" />
     <MESSAGE value="New: added RegisterForm" />
     <MESSAGE value="New: added RegisterForm: Username + Password" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added RegisterForm: Username + Password" />
+    <MESSAGE value="New: added RegisterForm: FirstName + LastName" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added RegisterForm: FirstName + LastName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -750,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+        <state relative-caret-position="731">
+          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
           <folding />
         </state>
       </provider>
