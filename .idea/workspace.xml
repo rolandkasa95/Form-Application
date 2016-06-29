@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="New: added FormCommon">
+    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -56,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormCommon.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormCommon.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormCommon.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -97,6 +107,7 @@
         <option value="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormInteface.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
       </list>
     </option>
   </component>
@@ -270,7 +281,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="478000" />
+      <workItem from="1467198775988" duration="575000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -454,11 +465,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467198994361</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="New: added FormComon : __constuct()">
+      <created>1467199267671</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1467199267671</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11075000" />
+    <option name="totallyTimeSpent" value="11172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -496,7 +514,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;Update: after modifyind the VehicleBase Class echoing out the second plane" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setOperator to the BusinessJet Trait to explore the multiple traits options" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $seatCapacity to the BusinessJet Trait" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $range to the BusinessJet Trait" />
@@ -521,7 +538,8 @@
     <MESSAGE value="New: added a Form Interface" />
     <MESSAGE value="New: added FormInterface: __constuct()" />
     <MESSAGE value="New: added FormCommon" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added FormCommon" />
+    <MESSAGE value="New: added FormComon : __constuct()" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added FormComon : __constuct()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -627,6 +645,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
