@@ -2,13 +2,14 @@
 return [
     //define the database credentials
     'db' => [
-        'dsn' => 'mysql:host=127.0.0.1;dbname=site',
-        'user' => 'admin',
-        'pass' => 'test',
+        'dsn' => 'mysql:host=localhost;dbname=dbname',
+        'user' => 'root',
+        'pass' => 'secret',
     ],
 
     //Provide paths for the autoloader
     'autoloaderpaths' => [
+        'Classes',
         'Classes/Controllers',
         'Classes/Forms',
         'Classes/Models',

@@ -63,7 +63,7 @@ abstract class FormBase
         $newField = '';
         switch ($field['type']){
             case 'text':
-                require_once CLASSES . 'Forms/Input/Text.php';
+                require_once CLASSES . 'Forms/Inputs/Text.php';
                 $newField = new Text();
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
@@ -71,7 +71,7 @@ abstract class FormBase
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'password':
-                require_once CLASSES . 'Forms/Input/Password.php';
+                require_once CLASSES . 'Forms/Inputs/Password.php';
                 $newField = new Password();
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
@@ -79,11 +79,11 @@ abstract class FormBase
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'submit':
-                require_once CLASSES . 'Forms/Input/Submit.php';
+                require_once CLASSES . 'Forms/Inputs/Submit.php';
                 $newField = new Submit();
                 break;
             case 'checkbox':
-                require_once CLASSES . 'Forms/Input/Checkbox.php';
+                require_once CLASSES . 'Forms/Inputs/Checkbox.php';
                 $newField = new Checkbox();
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
@@ -91,8 +91,8 @@ abstract class FormBase
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'select':
-                require_once CLASSES. 'Forms/Input/Option.php';
-                require_once  CLASSES . 'Forms/Input/Select.php';
+                require_once CLASSES. 'Forms/Inputs/Option.php';
+                require_once  CLASSES . 'Forms/Inputs/Select.php';
                 $newField = new Select();
                 $newField = new Select();
                 $values = null;
@@ -161,6 +161,7 @@ abstract class FormBase
      * @return bool|mixed
      */
     public function getField($field){
+        var_dump($field);
         foreach($this->fields as $value){
             if ($value->getName() === strtolower($field)){
                 return $value;

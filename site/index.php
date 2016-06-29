@@ -7,7 +7,7 @@ require CLASSES . 'ObjectFactoryService.php';
 require 'Loader.php';
 Loader::init();
 
-$controller = new AppController();
+$controller = new AppController;
 $controller->init();
 
 echo 'success';
