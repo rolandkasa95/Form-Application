@@ -102,5 +102,19 @@ abstract class BaseInput
         $this->label = $label;
     }
 
-    
+    /**
+     * @return mixed
+     */
+    public function isValid()
+    {
+        return $this->valid;
+    }
+
+    /**
+     * @return $this
+     */
+    public function setValid(){
+        $this->valid = true;
+        return $this;
+    }
 }
