@@ -110,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="821">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+              <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -351,14 +351,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="4929000" />
-    </task>
-    <task id="LOCAL-00002" summary="New: after VehicleBase modification eching out the second airplane&#10;Update: after modifyind the VehicleBase Class echoing out the second plane">
-      <created>1467033411753</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1467033411753</updated>
+      <workItem from="1467198775988" duration="5065000" />
     </task>
     <task id="LOCAL-00003" summary="New: after VehicleBase modification eching out the second airplane&#10;New: added a setOperator to the BusinessJet Trait to explore the multiple traits options">
       <created>1467034107111</created>
@@ -696,11 +689,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467203461229</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="New: added Input/BaseInput: setValidators">
+      <created>1467203713721</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1467203713721</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15526000" />
+    <option name="totallyTimeSpent" value="15662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -758,7 +758,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormComon : __constuct()" />
     <MESSAGE value="New: added FormBase" />
     <MESSAGE value="New: added FormBase: __construct()" />
     <MESSAGE value="New: added FormBase: getStartTag" />
@@ -783,7 +782,8 @@
     <MESSAGE value="New: added Input/BaseInput: getValue" />
     <MESSAGE value="New: added Input/BaseInput: get+setRequired" />
     <MESSAGE value="New: added Input/BaseInput: getType + getValidators" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/BaseInput: getType + getValidators" />
+    <MESSAGE value="New: added Input/BaseInput: setValidators" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/BaseInput: setValidators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -928,7 +928,7 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
           <folding />
         </state>
       </provider>

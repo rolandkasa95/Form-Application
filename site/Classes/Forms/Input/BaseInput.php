@@ -86,4 +86,21 @@ abstract class BaseInput
         }
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getLabelTag()
+    {
+        return "<label for=\"" . strtolower($this->label) . "\">" . ucwords($this->label) . "</labe>";
+    }
+
+    /**
+     * @param $label
+     */
+    public function setLabel($label){
+        $this->label = $label;
+    }
+
+    
 }
