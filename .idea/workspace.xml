@@ -69,8 +69,8 @@
       <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="414">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -281,7 +281,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="630000" />
+      <workItem from="1467198775988" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -479,11 +479,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467199359810</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="New: added FormBase: __construct()">
+      <created>1467199414713</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1467199414713</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11227000" />
+    <option name="totallyTimeSpent" value="11329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -521,7 +528,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $seatCapacity to the BusinessJet Trait" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $range to the BusinessJet Trait" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: use of insteadof in Plane Class" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: use of aliases to acces the Setoperator of the Airliner Trait" />
@@ -546,7 +552,8 @@
     <MESSAGE value="New: added FormCommon" />
     <MESSAGE value="New: added FormComon : __constuct()" />
     <MESSAGE value="New: added FormBase" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase" />
+    <MESSAGE value="New: added FormBase: __construct()" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase: __construct()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -658,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="414">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
