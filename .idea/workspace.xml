@@ -109,8 +109,8 @@
       <file leaf-file-name="BaseInput.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+            <state relative-caret-position="821">
+              <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -351,14 +351,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="5173000" />
-    </task>
-    <task id="LOCAL-00004" summary="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $seatCapacity to the BusinessJet Trait">
-      <created>1467034187274</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1467034187274</updated>
+      <workItem from="1467198775988" duration="5205000" />
     </task>
     <task id="LOCAL-00005" summary="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $range to the BusinessJet Trait">
       <created>1467034222813</created>
@@ -696,11 +689,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467203859393</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="New: added Input/BaseInput: isValid + setValid">
+      <created>1467203959968</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1467203959968</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15770000" />
+    <option name="totallyTimeSpent" value="15802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -758,7 +758,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormBase: __construct()" />
     <MESSAGE value="New: added FormBase: getStartTag" />
     <MESSAGE value="New: added FormBase: generateFields()" />
     <MESSAGE value="New: added FormBase: generateField - case text;" />
@@ -783,7 +782,8 @@
     <MESSAGE value="New: added Input/BaseInput: getType + getValidators" />
     <MESSAGE value="New: added Input/BaseInput: setValidators" />
     <MESSAGE value="New: added Input/BaseInput: getLabelTag + setLabel" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/BaseInput: getLabelTag + setLabel" />
+    <MESSAGE value="New: added Input/BaseInput: isValid + setValid" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/BaseInput: isValid + setValid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -927,8 +927,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+        <state relative-caret-position="821">
+          <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding />
         </state>
       </provider>

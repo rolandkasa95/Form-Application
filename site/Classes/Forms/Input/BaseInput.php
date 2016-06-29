@@ -117,4 +117,20 @@ abstract class BaseInput
         $this->valid = true;
         return $this;
     }
+
+     /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 }
