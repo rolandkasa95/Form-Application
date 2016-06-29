@@ -21,6 +21,10 @@ class Option
         return $option;
     }
 
+    /**
+     * @param $options
+     * @return bool
+     */
     public function getOptions($options){
         $result = null;
         foreach ($options as $option) {
@@ -32,5 +36,16 @@ class Option
         return $result ?:false;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getOptionString(){
+       return $this->optionString;
+    }
+
+    public function setOptionString($param){
+        $this->optionString = $param;
+        return $this;
+    }
 
 }

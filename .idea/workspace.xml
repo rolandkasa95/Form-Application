@@ -119,8 +119,8 @@
       <file leaf-file-name="Option.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="821">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -354,14 +354,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="6631000" />
-    </task>
-    <task id="LOCAL-00011" summary="Update: include the Jet Trait to Plane Class">
-      <created>1467035013846</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1467035013846</updated>
+      <workItem from="1467198775988" duration="6723000" />
     </task>
     <task id="LOCAL-00012" summary="Update: using the getOpStatus function">
       <created>1467035188489</created>
@@ -699,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467204424791</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="New: added Input/Options: getOption + getOptions">
+      <created>1467205477725</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1467205477725</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17228000" />
+    <option name="totallyTimeSpent" value="17320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -761,7 +761,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormBase: addField" />
     <MESSAGE value="New: added FormBase: validate" />
     <MESSAGE value="New: added FormBase: getFields" />
     <MESSAGE value="New: added FormBase: getField" />
@@ -786,7 +785,8 @@
     <MESSAGE value="New: added Input/Hidden" />
     <MESSAGE value="New: added Input/Hidden: __construct() + getInput" />
     <MESSAGE value="New: added Input/Options" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options" />
+    <MESSAGE value="New: added Input/Options: getOption + getOptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options: getOption + getOptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -954,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="821">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
       </provider>
