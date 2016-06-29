@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
+    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="New: added Input/Submit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Text.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
@@ -26,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/LoginForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="46" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Submit.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Submit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -124,6 +114,16 @@
               <folding>
                 <marker date="1467206465091" expanded="true" signature="336:343" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Text.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,6 +160,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Password.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Text.php" />
       </list>
     </option>
   </component>
@@ -359,14 +360,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="7631000" />
-    </task>
-    <task id="LOCAL-00020" summary="New: created the View Class">
-      <created>1467040192196</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1467040192196</updated>
+      <workItem from="1467198775988" duration="7773000" />
     </task>
     <task id="LOCAL-00021" summary="New: View class implemented">
       <created>1467041705157</created>
@@ -704,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467206313833</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="New: added Input/Submit">
+      <created>1467206474123</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1467206474123</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18228000" />
+    <option name="totallyTimeSpent" value="18370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -766,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added RegisterForm: FirstName + LastName" />
     <MESSAGE value="New: added RegisterForm: Email + EmailPreferredContact" />
     <MESSAGE value="New: added Input/InputInterface" />
     <MESSAGE value="New: added Input/BaseInput: setValue" />
@@ -791,7 +791,8 @@
     <MESSAGE value="New: added Input/Select: __construct + getInput" />
     <MESSAGE value="New: added Input/Select: isMultiple + getMultiple" />
     <MESSAGE value="New: added Input/Select: setOptions + getOptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select: setOptions + getOptions" />
+    <MESSAGE value="New: added Input/Submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Submit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -988,6 +989,14 @@
           <folding>
             <marker date="1467206465091" expanded="true" signature="336:343" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
