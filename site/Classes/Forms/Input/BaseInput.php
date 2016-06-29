@@ -19,4 +19,11 @@ abstract class BaseInput
         $this->value = $param;
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getValue(){
+        return $this->value;
+    }
 }
