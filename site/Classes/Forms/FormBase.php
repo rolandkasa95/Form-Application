@@ -143,4 +143,14 @@ abstract class FormBase
         return false;
     }
 
+    public function setField($field,$value){
+        $test = $this->getField($field);
+        $test->setValue($value);
+        return $this;
+    }
+
+    public function getEndTag(){
+        return '</form>';
+    }
+
 }

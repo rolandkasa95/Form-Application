@@ -69,8 +69,8 @@
       <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+            <state relative-caret-position="803">
+              <caret line="152" column="25" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -281,7 +281,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="2167000" />
+      <workItem from="1467198775988" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -542,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467200875032</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="New: added FormBase: getField">
+      <created>1467200947873</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200947873</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12764000" />
+    <option name="totallyTimeSpent" value="12844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -584,7 +591,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added an abstract setter+getter to the VehicleBase Class" />
     <MESSAGE value="New: added setter+getter to Plane Class , because it's extended by these abstract functions" />
     <MESSAGE value="New: added an interface: AircraftInterface" />
     <MESSAGE value="New: implementing the Interface to the Plane Class" />
@@ -609,7 +615,8 @@
     <MESSAGE value="New: added FormBase: addField" />
     <MESSAGE value="New: added FormBase: validate" />
     <MESSAGE value="New: added FormBase: getFields" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase: getFields" />
+    <MESSAGE value="New: added FormBase: getField" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase: getField" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+        <state relative-caret-position="803">
+          <caret line="152" column="25" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
           <folding />
         </state>
       </provider>
