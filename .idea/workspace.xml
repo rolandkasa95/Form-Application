@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -26,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,12 +106,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Select.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Select.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="353">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Submit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <marker date="1467206465091" expanded="true" signature="336:343" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,6 +159,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Option.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Password.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
       </list>
     </option>
   </component>
@@ -356,14 +359,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="7468000" />
-    </task>
-    <task id="LOCAL-00019" summary="Update: index.php catches the wrong data error">
-      <created>1467040083737</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1467040083737</updated>
+      <workItem from="1467198775988" duration="7631000" />
     </task>
     <task id="LOCAL-00020" summary="New: created the View Class">
       <created>1467040192196</created>
@@ -701,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467206273788</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="New: added Input/Select: setOptions + getOptions">
+      <created>1467206313833</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1467206313833</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18065000" />
+    <option name="totallyTimeSpent" value="18228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -763,7 +766,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added RegisterForm: Username + Password" />
     <MESSAGE value="New: added RegisterForm: FirstName + LastName" />
     <MESSAGE value="New: added RegisterForm: Email + EmailPreferredContact" />
     <MESSAGE value="New: added Input/InputInterface" />
@@ -788,7 +790,8 @@
     <MESSAGE value="New: added Input/Select" />
     <MESSAGE value="New: added Input/Select: __construct + getInput" />
     <MESSAGE value="New: added Input/Select: isMultiple + getMultiple" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select: isMultiple + getMultiple" />
+    <MESSAGE value="New: added Input/Select: setOptions + getOptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select: setOptions + getOptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -972,9 +975,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        <state relative-caret-position="353">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1467206465091" expanded="true" signature="336:343" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
