@@ -23,7 +23,25 @@ abstract class BaseInput
     /**
      * @return mixed
      */
-    public function getValue(){
+    public function getValue()
+    {
         return $this->value;
+    }
+
+    /**
+     * @return $this
+     */
+    public function setRequired()
+    {
+        $this->required = true;
+        return $this;
+    }
+
+     /**
+     * @return mixed
+     */
+    public function getRequired()
+    {
+        return $this->required;
     }
 }
