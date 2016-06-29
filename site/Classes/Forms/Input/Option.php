@@ -82,4 +82,40 @@ class Option
         $this->disabled = $disabled;
         return $this;
     }
+
+    /**
+     * @return boolean
+     */
+    public function isSelected()
+    {
+        return $this->selected;
+    }
+
+    /**
+     * @param boolean $selected
+     * @return $this
+     */
+    public function setSelected($selected)
+    {
+        $this->selected = $selected;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param mixed $value
+     * @return $this
+     */
+    public function setValue($value)
+    {
+        $this->value = $value;
+        return $this;
+    }
 }
