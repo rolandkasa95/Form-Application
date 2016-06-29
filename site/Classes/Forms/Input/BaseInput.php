@@ -44,4 +44,24 @@ abstract class BaseInput
     {
         return $this->required;
     }
+
+    public function isRequired(){
+        return $this->required;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+     /**
+     * @return mixed
+     */
+    public function getValidators()
+    {
+        return $this->validators;
+    }
 }
