@@ -119,8 +119,8 @@
       <file leaf-file-name="Select.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="720">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -356,14 +356,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="7367000" />
-    </task>
-    <task id="LOCAL-00017" summary="New: implementing the Interface to the Plane Class">
-      <created>1467036706589</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1467036706589</updated>
+      <workItem from="1467198775988" duration="7425000" />
     </task>
     <task id="LOCAL-00018" summary="New: type Hinting (doesn't works because of php 5.6 is not implemented Scalar Hinting)">
       <created>1467039900660</created>
@@ -701,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467205988841</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="New: added Input/Select: __construct + getInput">
+      <created>1467206213040</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1467206213040</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17964000" />
+    <option name="totallyTimeSpent" value="18022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -763,7 +763,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added LoginForm: __construct()" />
     <MESSAGE value="New: added RegisterForm" />
     <MESSAGE value="New: added RegisterForm: Username + Password" />
     <MESSAGE value="New: added RegisterForm: FirstName + LastName" />
@@ -788,7 +787,8 @@
     <MESSAGE value="New: added Input/Options: isSelected + setSelected + getName + setName" />
     <MESSAGE value="New: added Input/Password" />
     <MESSAGE value="New: added Input/Select" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select" />
+    <MESSAGE value="New: added Input/Select: __construct + getInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select: __construct + getInput" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -972,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="720">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding />
         </state>
       </provider>

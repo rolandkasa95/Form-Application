@@ -27,4 +27,21 @@ class Select extends BaseInput implements InputInterface
         $select .= "</select>";
         return $select;
     }
+
+     /**
+     * @return boolean
+     */
+    public function isMultiple()
+    {
+        return $this->multiple;
+    }
+
+    /**
+     * @param $multiple
+     * @return mixed
+     */
+    public function setMultiple($multiple){
+        $this->multiple = $multiple;
+        return $multiple;
+    }
 }
