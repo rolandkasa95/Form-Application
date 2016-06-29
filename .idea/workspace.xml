@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="New: added LoginForm: __construct()">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -77,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="695">
+              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,6 +129,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
       </list>
     </option>
   </component>
@@ -293,7 +303,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="3005000" />
+      <workItem from="1467198775988" duration="3652000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -575,11 +585,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467201153127</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="New: added LoginForm: __construct()">
+      <created>1467201793156</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1467201793156</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13602000" />
+    <option name="totallyTimeSpent" value="14249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -617,7 +634,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: implementing the Interface to the Plane Class" />
     <MESSAGE value="New: type Hinting (doesn't works because of php 5.6 is not implemented Scalar Hinting)" />
     <MESSAGE value="Update: index.php catches the wrong data error" />
     <MESSAGE value="New: created the View Class" />
@@ -642,7 +658,8 @@
     <MESSAGE value="New: added FormBase: getField" />
     <MESSAGE value="New: added FormBase: setField + getEndTag" />
     <MESSAGE value="New: added LoginForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added LoginForm" />
+    <MESSAGE value="New: added LoginForm: __construct()" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added LoginForm: __construct()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -762,8 +779,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="695">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
