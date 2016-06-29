@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/InputInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
@@ -96,11 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputInterface.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InputInterface.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/InputInterface.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseInput.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -141,6 +151,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/InputInterface.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php" />
       </list>
     </option>
   </component>
@@ -340,7 +351,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="4385000" />
+      <workItem from="1467198775988" duration="4496000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -657,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467203085871</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="New: added Input/InputInterface">
+      <created>1467203173859</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1467203173859</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14982000" />
+    <option name="totallyTimeSpent" value="15093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -719,7 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: Autoloader Class added&#10;" />
     <MESSAGE value="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <MESSAGE value="New: added a Form Interface" />
     <MESSAGE value="New: added FormInterface: __constuct()" />
@@ -744,7 +761,8 @@
     <MESSAGE value="New: added RegisterForm: Username + Password" />
     <MESSAGE value="New: added RegisterForm: FirstName + LastName" />
     <MESSAGE value="New: added RegisterForm: Email + EmailPreferredContact" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added RegisterForm: Email + EmailPreferredContact" />
+    <MESSAGE value="New: added Input/InputInterface" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/InputInterface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -882,6 +900,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
