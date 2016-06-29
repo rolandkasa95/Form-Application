@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Input/Checkbox.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Checkbox.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -26,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ObjectFactoryService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checkbox.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Checkbox.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Checkbox.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="702">
               <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hidden.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -153,6 +153,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/InputInterface.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Checkbox.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php" />
       </list>
     </option>
   </component>
@@ -352,14 +353,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="5411000" />
-    </task>
-    <task id="LOCAL-00007" summary="New: after VehicleBase modification eching out the second airplane&#10;New: use of aliases to acces the Setoperator of the Airliner Trait">
-      <created>1467034510819</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1467034510819</updated>
+      <workItem from="1467198775988" duration="5483000" />
     </task>
     <task id="LOCAL-00008" summary="New: adde Jet Trait">
       <created>1467034669133</created>
@@ -697,11 +691,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467204103848</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="New: added Input/Checkbox : getInput + getValueString + setValueString">
+      <created>1467204214928</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1467204214928</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16008000" />
+    <option name="totallyTimeSpent" value="16080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -759,7 +760,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormBase: generateField - case text;" />
     <MESSAGE value="New: added FormBase: generateField - case password;" />
     <MESSAGE value="New: added FormBase: generateField - case submit;" />
     <MESSAGE value="New: added FormBase: generateField - case checkbox + select;" />
@@ -784,7 +784,8 @@
     <MESSAGE value="New: added Input/BaseInput: isValid + setValid" />
     <MESSAGE value="New: added Input/BaseInput: setName + getName" />
     <MESSAGE value="New: added Input/Checkbox : __construct()" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Checkbox : __construct()" />
+    <MESSAGE value="New: added Input/Checkbox : getInput + getValueString + setValueString" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Checkbox : getInput + getValueString + setValueString" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -938,6 +939,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
