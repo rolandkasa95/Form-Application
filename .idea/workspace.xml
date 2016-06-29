@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Password.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Input/Option.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Option.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -26,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FormInteface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormInteface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FormCommon.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormCommon.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Option.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Option.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
+            <state relative-caret-position="569">
               <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -155,6 +155,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Checkbox.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Option.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Input/Password.php" />
       </list>
     </option>
   </component>
@@ -354,14 +355,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="6924000" />
-    </task>
-    <task id="LOCAL-00014" summary="New: added an abstract setter+getter to the VehicleBase Class">
-      <created>1467035891823</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1467035891823</updated>
+      <workItem from="1467198775988" duration="7116000" />
     </task>
     <task id="LOCAL-00015" summary="New: added setter+getter to Plane Class , because it's extended by these abstract functions">
       <created>1467036118220</created>
@@ -699,11 +693,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467205701165</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="New: added Input/Options: isSelected + setSelected + getName + setName">
+      <created>1467205783523</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1467205783523</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17521000" />
+    <option name="totallyTimeSpent" value="17713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -761,7 +762,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added FormBase: getField" />
     <MESSAGE value="New: added FormBase: setField + getEndTag" />
     <MESSAGE value="New: added LoginForm" />
     <MESSAGE value="New: added LoginForm: __construct()" />
@@ -786,7 +786,8 @@
     <MESSAGE value="New: added Input/Options: getOption + getOptions" />
     <MESSAGE value="New: added Input/Options: getOptionString + setOptionString" />
     <MESSAGE value="New: added Input/Options: getLabel + setLabel + isDisabled + setDisabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options: getLabel + setLabel + isDisabled + setDisabled" />
+    <MESSAGE value="New: added Input/Options: isSelected + setSelected + getName + setName" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Options: isSelected + setSelected + getName + setName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -954,8 +955,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
+        <state relative-caret-position="569">
           <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
