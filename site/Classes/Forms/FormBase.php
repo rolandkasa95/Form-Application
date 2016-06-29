@@ -71,6 +71,10 @@ abstract class FormBase
                 $field['name'] ? $newField->setName($field['name']) :null;
                 $field['validator'] ? $newField->setValidator($field['validator']) : null;
                 break;
+            case 'submit':
+                require_once CLASSES . 'Forms/Input/Submit.php';
+                $newField = new Submit();
+                break;
         }
     }
 }
