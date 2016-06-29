@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -119,8 +119,8 @@
       <file leaf-file-name="Select.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="486">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -356,14 +356,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="7146000" />
-    </task>
-    <task id="LOCAL-00016" summary="New: added an interface: AircraftInterface">
-      <created>1467036458376</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1467036458376</updated>
+      <workItem from="1467198775988" duration="7367000" />
     </task>
     <task id="LOCAL-00017" summary="New: implementing the Interface to the Plane Class">
       <created>1467036706589</created>
@@ -701,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467205960176</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="New: added Input/Select">
+      <created>1467205988841</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1467205988841</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17743000" />
+    <option name="totallyTimeSpent" value="17964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -763,7 +763,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added LoginForm" />
     <MESSAGE value="New: added LoginForm: __construct()" />
     <MESSAGE value="New: added RegisterForm" />
     <MESSAGE value="New: added RegisterForm: Username + Password" />
@@ -788,7 +787,8 @@
     <MESSAGE value="New: added Input/Options: getLabel + setLabel + isDisabled + setDisabled" />
     <MESSAGE value="New: added Input/Options: isSelected + setSelected + getName + setName" />
     <MESSAGE value="New: added Input/Password" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Password" />
+    <MESSAGE value="New: added Input/Select" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added Input/Select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -972,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="486">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
