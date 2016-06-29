@@ -134,4 +134,13 @@ abstract class FormBase
         return $this->fields;
     }
 
+    public function getField($field){
+        foreach($this->fields as $value){
+            if ($value->getName() === strtolower($field)){
+                return $value
+            }
+        }
+        return false;
+    }
+
 }
