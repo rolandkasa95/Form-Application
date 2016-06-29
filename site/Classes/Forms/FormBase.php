@@ -87,11 +87,12 @@ abstract class FormBase
                 require_once CLASSES. 'Forms/Input/Option.php';
                 require_once  CLASSES . 'Forms/Input/Select.php';
                 $newField = new Select();
+                $newField = new Select();
                 $values = null;
-                $field['multiple'] ? $newField->setMultiple($field['multiple']);
-                $field['options'] ? $newField->setOptions($field['options']) :null;
+                $field['multiple'] ? $newField->setMultiple($field['multiple']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
-                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['name'] ? $newField->setName($field['name']) : null;
+                $field['options'] ? $newField->setOptions($field['options']) : null;
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
         }
@@ -137,7 +138,7 @@ abstract class FormBase
     public function getField($field){
         foreach($this->fields as $value){
             if ($value->getName() === strtolower($field)){
-                return $value
+                return $value;
             }
         }
         return false;
