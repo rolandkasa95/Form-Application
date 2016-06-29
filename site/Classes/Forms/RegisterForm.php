@@ -44,5 +44,39 @@ class RegisterForm extends FormCommon implements FormInterface
                 'required',
             ],
         ]);
+
+        $this->addField([
+           'label' => 'First Name',
+            'type' => 'text',
+            'name' => 'first_name',
+            'priority' => 3,
+            'required' => true,
+            'value' => '',
+            'validator' => [
+                'StringLength' => [
+                    'minimum' => 2,
+                    'maximum' => 40,
+                ],
+                'Alpha',
+                'required',
+            ],
+        ]);
+
+        $this->addField([
+            'label' => 'Last Name',
+            'type' => 'text',
+            'name' => 'last_name',
+            'priority' => 4,
+            'required' => true,
+            'value' => '',
+            'validator' => [
+                'StringLength' => [
+                    'minimum' => 2,
+                    'maximum' => 40,
+                ],
+                'Alpha',
+                'required',
+            ],
+        ]);
     }
 }
