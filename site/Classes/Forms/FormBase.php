@@ -75,6 +75,25 @@ abstract class FormBase
                 require_once CLASSES . 'Forms/Input/Submit.php';
                 $newField = new Submit();
                 break;
+            case 'checkbox':
+                require_once CLASSES . 'Forms/Input/Checkbox.php';
+                $newField = new Checkbox();
+                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['label'] ? $newField->setLabel($field['label']) : null;
+                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                break;
+            case 'select':
+                require_once CLASSES. 'Forms/Input/Option.php';
+                require_once  CLASSES . 'Forms/Input/Select.php';
+                $newField = new Select();
+                $values = null;
+                $field['multiple'] ? $newField->setMultiple($field['multiple']);
+                $field['options'] ? $newField->setType($field['options']) :null;
+                $field['label'] ? $newField->setLabel($field['label']) : null;
+                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                break;
         }
     }
 }
