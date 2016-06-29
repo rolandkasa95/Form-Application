@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -69,8 +69,8 @@
       <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="252">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -281,7 +281,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="575000" />
+      <workItem from="1467198775988" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -472,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467199267671</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="New: added FormBase">
+      <created>1467199359810</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1467199359810</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11172000" />
+    <option name="totallyTimeSpent" value="11227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -514,7 +521,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setOperator to the BusinessJet Trait to explore the multiple traits options" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $seatCapacity to the BusinessJet Trait" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: added a setter for $range to the BusinessJet Trait" />
     <MESSAGE value="New: after VehicleBase modification eching out the second airplane&#10;New: use of insteadof in Plane Class" />
@@ -539,7 +545,8 @@
     <MESSAGE value="New: added FormInterface: __constuct()" />
     <MESSAGE value="New: added FormCommon" />
     <MESSAGE value="New: added FormComon : __constuct()" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added FormComon : __constuct()" />
+    <MESSAGE value="New: added FormBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -651,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="252">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
