@@ -130,4 +130,8 @@ abstract class FormBase
         return $this->isValid = $invalidCount ? true:false;
     }
 
+    public function getFields(){
+        return $this->fields;
+    }
+
 }

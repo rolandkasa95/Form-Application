@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="New: added FormBase: addField">
+    <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
     </list>
@@ -70,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="821">
-              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+              <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -281,7 +281,7 @@
       <updated>1467032305822</updated>
       <workItem from="1467032306905" duration="8531000" />
       <workItem from="1467110484751" duration="2066000" />
-      <workItem from="1467198775988" duration="2050000" />
+      <workItem from="1467198775988" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="New: committed Lesson2">
       <created>1467032378349</created>
@@ -528,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467200475631</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="New: added FormBase: validate">
+      <created>1467200833010</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200833010</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12647000" />
+    <option name="totallyTimeSpent" value="12678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="918" height="1028" extended-state="4" />
@@ -570,7 +577,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update: using the getOpStatus function" />
     <MESSAGE value="Update: abstract VehicleBase class cannot be instantiated as an object" />
     <MESSAGE value="New: added an abstract setter+getter to the VehicleBase Class" />
     <MESSAGE value="New: added setter+getter to Plane Class , because it's extended by these abstract functions" />
@@ -595,7 +601,8 @@
     <MESSAGE value="New: added FormBase: generateField - case submit;" />
     <MESSAGE value="New: added FormBase: generateField - case checkbox + select;" />
     <MESSAGE value="New: added FormBase: addField" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase: addField" />
+    <MESSAGE value="New: added FormBase: validate" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: added FormBase: validate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -708,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
-          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding />
         </state>
       </provider>
