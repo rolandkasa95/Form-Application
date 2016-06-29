@@ -34,6 +34,9 @@ abstract class FormBase
         return $form;
     }
 
+    /**
+     * @return bool
+     */
     public function generateFields(){
         $config = $this->config;
         $newField = null;
@@ -52,6 +55,10 @@ abstract class FormBase
         return true;
     }
 
+    /**
+     * @param $field
+     * @return Checkbox|Password|Select|string|Submit|Text
+     */
     public function generateField($field){
         $newField = '';
         switch ($field['type']){
@@ -99,6 +106,10 @@ abstract class FormBase
         return $newField;
     }
 
+    /**
+     * @param $field
+     * @return bool|Checkbox|Password|Select|string|Submit|Text
+     */
     public function addField($field){
         if ($newField = $this->generateField($field)){
             $this->fields[$field['priority']] = $newField;
@@ -107,11 +118,18 @@ abstract class FormBase
         return false;
     }
 
+    /**
+     * @param $data
+     * @return $this
+     */
     public function setData($data){
         $this->data = $data;
         return $this;
     }
 
+    /**
+     * @return bool
+     */
     public function valudate()
     {
         $invalidCount = 0;
@@ -131,10 +149,17 @@ abstract class FormBase
         return $this->isValid = $invalidCount ? true:false;
     }
 
+    /**
+     * @return array
+     */
     public function getFields(){
         return $this->fields;
     }
 
+    /**
+     * @param $field
+     * @return bool|mixed
+     */
     public function getField($field){
         foreach($this->fields as $value){
             if ($value->getName() === strtolower($field)){
@@ -144,12 +169,20 @@ abstract class FormBase
         return false;
     }
 
+    /**
+     * @param $field
+     * @param $value
+     * @return $this
+     */
     public function setField($field,$value){
         $test = $this->getField($field);
         $test->setValue($value);
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getEndTag(){
         return '</form>';
     }
