@@ -45,7 +45,7 @@ class AppController
 
     public function saveSessionToken(){
         $session = ObjectFactoryService::getSession();
-        $session->save(['token' => $this->form->getField('token')->getValue()]);
+        $session->save(['token' => $this->form->getField('username')->getValue()]);
     }
 
     public function login(){

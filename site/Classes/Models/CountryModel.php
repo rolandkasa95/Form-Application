@@ -1,6 +1,6 @@
 <?php
 
-class CountryModel implements ModelInteface
+class CountryModel implements ModelInterface
 {
     protected $db;
 
@@ -10,21 +10,22 @@ class CountryModel implements ModelInteface
      */
     public function __construct($pdo)
     {
-        $this->db=$pdo;
+        $this->db=ObjectFactoryService::getDb(require 'Config/config.php');
     }
 
     /**
      * @return mixed
      */
     public function getCountries(){
-        $sql = 'SELECT `name` FROM country';
+        $sql = 'SELECT * FROM country';
+        var_dump($sql);
         try{
             $statement = $this->db->query($sql);
             $result = $statement->fetchAll(PDO::FETCH_COLUMN);
             sort($result);
             return $result;
         } catch (PDOException $e){
-            echo "Failed constructing the querry: " . $e->getMessage();
+            echo "Failed constructing the query: " . $e->getMessage();
         }
     }
 }

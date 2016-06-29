@@ -1,6 +1,6 @@
 <?php
 
-class UserModel implements ModelInteface
+class UserModel implements ModelInterface
 {
 
     protected $db;

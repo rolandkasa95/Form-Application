@@ -92,7 +92,6 @@ class RegisterForm extends FormCommon implements FormInterface
             ],
         ]);
 
-        $countries = $this->models['country']->getCountries();
         $this->addField([
             'label' => 'Contact By Email',
             'type' => 'checkbox',
@@ -100,6 +99,20 @@ class RegisterForm extends FormCommon implements FormInterface
             'priority' => 6,
             'required' => true,
             'value' => false,
+            'validator' => [
+                'boolean',
+            ],
+        ]);
+
+        $countries = $this->models['country']->getCountries();
+        $this->addField([
+            'label' => 'Country',
+            'type' => 'select',
+            'name' => 'country',
+            'multiple' => false,
+            'priority' => 7,
+            'required' => true,
+            'value' => '',
             'options' => $countries,
             'validator' => [
                 'InArray' => $countries,

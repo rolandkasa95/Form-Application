@@ -161,8 +161,9 @@ abstract class FormBase
      * @return bool|mixed
      */
     public function getField($field){
-        var_dump($field);
+//        var_dump($field);
         foreach($this->fields as $value){
+            var_dump($value->getName());
             if ($value->getName() === strtolower($field)){
                 return $value;
             }
