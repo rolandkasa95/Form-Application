@@ -44,4 +44,22 @@ class Select extends BaseInput implements InputInterface
         $this->multiple = $multiple;
         return $multiple;
     }
+
+    /**
+     * @return array
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param array $options
+     * @return $this
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+        return $this;
+    }
 }
