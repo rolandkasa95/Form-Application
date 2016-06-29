@@ -64,4 +64,26 @@ abstract class BaseInput
     {
         return $this->validators;
     }
+
+    public function setValidators($param){
+        if (is_array($param)){
+            foreach($param as $key => $value){
+                if (is_string($key)){
+                    require_once  CLASSES . 'Validators/' . ucfirst($key) . '.php';
+                    $validator = new $key();
+                    if (is_array($value)){
+                        $validator->setValues($value);
+                    }
+                    $this->validators[] = $validator;
+                }elseif (is_numeric($key)){
+                    require_once CLASSES . 'Validators/' . ucfirst($value) . '.php';
+                    $this->validators[] = new $value;
+                }
+            }
+        }else{
+            require_once CLASSES . 'Validators/' . ucfirst($param) . '.php';
+            $this->validators[] = new $param;
+        }
+        return $this;
+    }
 }
