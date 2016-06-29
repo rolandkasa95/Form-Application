@@ -51,4 +51,19 @@ abstract class FormBase
         ksort($this->fields);
         return true;
     }
+
+    public function generateField($field){
+        $newField = '';
+        switch ($field['type']){
+            case 'text':
+                require_once CLASSES . 'Forms/Input/Text.php';
+                $newField = new Text();
+                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['label'] ? $newField->setLabel($field['label']) : null;
+                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                break;
+            
+        }
+    }
 }
