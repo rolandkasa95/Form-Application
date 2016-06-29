@@ -61,7 +61,7 @@ abstract class FormBase
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) :null;
-                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'password':
                 require_once CLASSES . 'Forms/Input/Password.php';
@@ -69,7 +69,7 @@ abstract class FormBase
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) :null;
-                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'submit':
                 require_once CLASSES . 'Forms/Input/Submit.php';
@@ -81,7 +81,7 @@ abstract class FormBase
                 $field['type'] ? $newField->setType($field['type']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) :null;
-                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'select':
                 require_once CLASSES. 'Forms/Input/Option.php';
@@ -89,11 +89,45 @@ abstract class FormBase
                 $newField = new Select();
                 $values = null;
                 $field['multiple'] ? $newField->setMultiple($field['multiple']);
-                $field['options'] ? $newField->setType($field['options']) :null;
+                $field['options'] ? $newField->setOptions($field['options']) :null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) :null;
-                $field['validator'] ? $newField->setValidator($field['validator']) : null;
+                $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
         }
+        return $newField;
     }
+
+    public function addField($field){
+        if ($newField = $this->generateField($field)){
+            $this->fields[$field['priority']] = $newField;
+            return $newField;
+        };
+        return false;
+    }
+
+    public function setData($data){
+        $this->data = $data;
+        return $this;
+    }
+
+    public function valudate()
+    {
+        $invalidCount = 0;
+        foreach ($this->data as $key => $value) {
+            foreach ($this->fields as $field) {
+                if ($field->getName() == $key && $key !== 'submit') {
+                    foreach ($field->getValidators() as $validator) {
+                        if (!$validator->validate($value)) {
+                            $invalidCount++;
+                        }
+                    }
+                    if (!$invalidCount) $field->setValid();
+                    break;
+                }
+            }
+        }
+        return $this->isValid = $invalidCount ? true:false;
+    }
+
 }
