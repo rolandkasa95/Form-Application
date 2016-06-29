@@ -34,5 +34,21 @@ abstract class FormBase
         return $form;
     }
 
-
+    public function generateFields(){
+        $config = $this->config;
+        $newField = null;
+        foreach ($config['fields'] as $field){
+            $newField = $this->generateField($field);
+        }
+        if(!$newField){
+            return false;
+        }else{
+            !empty($field['value']) ?$newField->setValue($field['value']) :null;
+            !empty($field['name']) ?$newField->setName($field['name']) :null;
+            !empty($field['required']) ? $newField->setRequired($field['required']) : null;
+            !empty($filed['priority']) ? $this->fields[$field['priority']] = $newField :null;
+        }
+        ksort($this->fields);
+        return true;
+    }
 }
