@@ -20,7 +20,7 @@ class UserModel implements ModelInterface
      */
     public function getUsers()
     {
-        $sql = "SELECT * FROM `users`";
+        $sql = "SELECT * FROM users";
         try {
             return $this->db->query($sql, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
@@ -36,7 +36,8 @@ class UserModel implements ModelInterface
     {
         $sql = "SELECT * FROM users WHERE username = '{$data['username']}'";
         try {
-            $stmt = $this->db->query($sql);
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             if($result && password_verify($data['password'], $result['password'])){
                 return $result;
@@ -56,7 +57,7 @@ class UserModel implements ModelInterface
         //Encrypt the password
         $hash = password_hash($data['password'], PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO `users`(`username`, `password`, `first_name`, `last_name`, `email`, `email_preferred_contact`, `country`) VALUES (:username, :password, :first_name, :last_name, :email, :email_preferred_contact, :country)";
+        $sql = "INSERT INTO users(username, password, first_name, last_name, email, email_preferred_contact, country) VALUES (:username, :password, :first_name, :last_name, :email, :email_preferred_contact, :country)";
 
         try {
             $stmt = $this->db->prepare($sql);

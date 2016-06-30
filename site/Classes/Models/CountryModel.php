@@ -23,7 +23,6 @@ class CountryModel implements ModelInterface
             $stmt = $this->db->prepare($sql);
             $stmt->execute();
             $results = $stmt->fetchAll(PDO::FETCH_COLUMN);
-            var_dump($results);
             sort($results);
             return $results;
         }catch(PDOException $e){
