@@ -28,7 +28,10 @@ abstract class FormBase
         $config = $this->config;
         $form = "<form";
         $form .= $config['id'] ? " id=\"{$config['id']}\"" : null;
-
+        $form .= $config['name'] ? " name=\"{$config['name']}\"" : null;
+        $form .= $config['action'] ? " action=\"{$config['action']}\"" :null;
+        $form .= $config['method'] ? " method=\"{$config['method']}\"" : null;
+        return $form;
     }
 
     /**
