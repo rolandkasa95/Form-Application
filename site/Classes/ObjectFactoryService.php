@@ -43,6 +43,11 @@ abstract class ObjectFactoryService
     /**
      * @return Session
      */
+
+    public static function getConfigLoader(){
+        return require_once 'Config/configLoader.php';
+    }
+
     public static function getSession()
     {
         if (!self::$session) {

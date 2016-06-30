@@ -9,7 +9,7 @@ class Loader
         spl_autoload_extensions('.php');
 
         //Set applications paths for the spl_autoloader
-        foreach(ObjectFactoryService::getConfig()['autoloaderpaths'] as $path){
+        foreach(ObjectFactoryService::getConfigLoader() as $path){
             set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__ . DIRECTORY_SEPARATOR . $path . DIRECTORY_SEPARATOR);
 //            var_dump(set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__ . DIRECTORY_SEPARATOR . $path . DIRECTORY_SEPARATOR));
 //            die;

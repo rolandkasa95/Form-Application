@@ -1,0 +1,11 @@
+<?php
+return
+    [
+    'Classes',
+    'Classes/Controllers',
+    'Classes/Forms',
+    'Classes/Models',
+    'Classes/Views',
+    'Classes/Validators',
+    'Classes/Forms/Inputs',
+];
