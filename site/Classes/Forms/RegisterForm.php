@@ -45,7 +45,7 @@ class RegisterForm extends FormCommon implements FormInterface
             'value' => '',
             'validator' => [
                 'StringLength' => [
-                    'minimum' => 10,
+                    'minimum' => 2,
                     'maximum' => 30,
                 ],
                 'required',

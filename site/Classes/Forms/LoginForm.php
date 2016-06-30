@@ -27,10 +27,9 @@ class LoginForm extends FormCommon implements FormInterface
             'value' => '',
             'validator' => [
                 'StringLength' => [
-                    'minimum' => 8,
+                    'minimum' => 2,
                     'maximum' => 30,
-                ],
-                'alnum',
+                ],  
                 'required',
             ],
         ]);
@@ -45,7 +44,7 @@ class LoginForm extends FormCommon implements FormInterface
             'value' => '',
             'validator' =>[
                 'StringLength' => [
-                    'minimum' => 8,
+                    'minimum' => 2,
                     'maximum' => 30,
                 ],
                 'required',

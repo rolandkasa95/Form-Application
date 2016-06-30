@@ -165,7 +165,13 @@ abstract class FormBase
                 }
             }
         }
-        return $this->isValid = $invalidCount ? false : true;
+        var_dump($invalidCount);
+       if ($invalidCount){
+           return false;
+       }else{
+           return true;
+       }
+
     }
 
     /**

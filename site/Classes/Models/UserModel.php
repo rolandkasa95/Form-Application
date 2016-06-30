@@ -39,6 +39,8 @@ class UserModel implements ModelInterface
             $stmt = $this->db->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            var_dump($data['password']);
+            var_dump($result['password']);
             if($result && password_verify($data['password'], $result['password'])){
                 return $result;
             } else {
