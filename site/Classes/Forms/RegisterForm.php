@@ -31,6 +31,7 @@ class RegisterForm extends FormCommon implements FormInterface
                     'maximum' => 30,
                 ],
                 'Alnum',
+                'Duplication',
                 'required',
             ],
         ]);
