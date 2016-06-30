@@ -84,8 +84,6 @@ $this->models);
         //Code to authenticate user
         $user = $this->models['user']->authenticate($this->form->getData());
         if ($user) {
-            var_dump($this->view->user);
-            var_dump($user);
             $this->view->user = $user;
             //Render some "Welcome"
             $this->view->render('welcome');

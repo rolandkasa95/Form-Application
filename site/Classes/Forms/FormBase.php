@@ -165,7 +165,6 @@ abstract class FormBase
                 }
             }
         }
-        var_dump($invalidCount);
        if ($invalidCount){
            return false;
        }else{

@@ -5,12 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Models/UserModel.php" afterPath="$PROJECT_DIR$/site/Classes/Models/UserModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Validators/Required.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/Required.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Layouts/login.php" afterPath="$PROJECT_DIR$/site/Layouts/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Layouts/register.php" afterPath="$PROJECT_DIR$/site/Layouts/register.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -33,25 +28,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="84" column="76" selection-start-line="84" selection-start-column="76" selection-end-line="84" selection-end-column="76" />
+            <state relative-caret-position="272">
+              <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserModel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Models/UserModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+            <state relative-caret-position="498">
+              <caret line="59" column="120" selection-start-line="59" selection-start-column="118" selection-end-line="59" selection-end-column="120" />
               <folding>
-                <marker date="1467291444274" expanded="true" signature="305:324" ph="SELECT * FRO... users" />
-                <marker date="1467291444274" expanded="true" signature="617:675" ph="SELECT * FRO... users" />
-                <marker date="1467291444274" expanded="true" signature="1362:1562" ph="INSERT INTO users... " />
+                <marker date="1467291539249" expanded="true" signature="305:324" ph="SELECT * FRO... users" />
+                <marker date="1467291539249" expanded="true" signature="617:675" ph="SELECT * FRO... users" />
+                <marker date="1467291539249" expanded="true" signature="1278:1478" ph="INSERT INTO users... " />
               </folding>
             </state>
           </provider>
@@ -130,8 +125,8 @@
       <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="157" column="67" selection-start-line="157" selection-start-column="67" selection-end-line="157" selection-end-column="67" />
+            <state relative-caret-position="434">
+              <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -176,9 +171,9 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Required.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Models/UserModel.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
-        <option value="$PROJECT_DIR$/site/Classes/Models/UserModel.php" />
       </list>
     </option>
   </component>
@@ -483,14 +478,7 @@
       <workItem from="1467198775988" duration="9030000" />
       <workItem from="1467214102884" duration="96000" />
       <workItem from="1467214306197" duration="1563000" />
-      <workItem from="1467217049689" duration="9282000" />
-    </task>
-    <task id="LOCAL-00028" summary="New: added FormBase">
-      <created>1467199359810</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1467199359810</updated>
+      <workItem from="1467217049689" duration="9385000" />
     </task>
     <task id="LOCAL-00029" summary="New: added FormBase: __construct()">
       <created>1467199414713</created>
@@ -828,11 +816,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467287664107</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Update: fixed some bugs v1.4 Finally it works">
+      <created>1467291507375</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1467291507375</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30568000" />
+    <option name="totallyTimeSpent" value="30671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -870,7 +865,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added Input/BaseInput: getLabelTag + setLabel" />
     <MESSAGE value="New: added Input/BaseInput: isValid + setValid" />
     <MESSAGE value="New: added Input/BaseInput: setName + getName" />
     <MESSAGE value="New: added Input/Checkbox : __construct()" />
@@ -895,7 +889,8 @@
     <MESSAGE value="Update: fixed some bugs v1.1" />
     <MESSAGE value="Update: fixed some bugs v1.2" />
     <MESSAGE value="Update: fixed some bugs v1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: fixed some bugs v1.3" />
+    <MESSAGE value="Update: fixed some bugs v1.4 Finally it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: fixed some bugs v1.4 Finally it works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1213,14 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="157" column="67" selection-start-line="157" selection-start-column="67" selection-end-line="157" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-897">
@@ -1253,23 +1240,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Models/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="84" column="76" selection-start-line="84" selection-start-column="76" selection-end-line="84" selection-end-column="76" />
+        <state relative-caret-position="498">
+          <caret line="59" column="120" selection-start-line="59" selection-start-column="118" selection-end-line="59" selection-end-column="120" />
+          <folding>
+            <marker date="1467291539249" expanded="true" signature="305:324" ph="SELECT * FRO... users" />
+            <marker date="1467291539249" expanded="true" signature="617:675" ph="SELECT * FRO... users" />
+            <marker date="1467291539249" expanded="true" signature="1278:1478" ph="INSERT INTO users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Models/UserModel.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding>
-            <marker date="1467291444274" expanded="true" signature="305:324" ph="SELECT * FRO... users" />
-            <marker date="1467291444274" expanded="true" signature="617:675" ph="SELECT * FRO... users" />
-            <marker date="1467291444274" expanded="true" signature="1362:1562" ph="INSERT INTO users... " />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
