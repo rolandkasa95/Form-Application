@@ -1,15 +1,14 @@
 <?php
-
+/**
+ * Boolean Validator
+ */
 class Boolean implements ValidatorInterface
 {
-    /**
-     * @param $value
-     * @return bool
-     */
-    public function validate($value)
+    public function validate($value = null)
     {
-        if ($value == 0 || $value == 1)return true;
+        if ($value == 0 || $value == 1) {
+            return true;
+        }
         return false;
     }
-
 }

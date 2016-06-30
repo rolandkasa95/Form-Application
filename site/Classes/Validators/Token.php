@@ -1,18 +1,18 @@
 <?php
-
+/**
+ * Token Validator
+ */
 class Token implements ValidatorInterface
 {
-
     /**
-     * @param $value
+     * @param null $value
      * @return bool
      */
-    public function validate($value)
-    {
+    public function validate($value){
         if(empty($value))return false;
-        $session= ObjectFactoryService::getSession();
+        $session = ObjectFactoryService::getSession();
         $token = $session->get('token');
-        if($value === $token) return true;
+        if($value === $token)return true;
         return false;
     }
 }

@@ -1,7 +1,7 @@
-<htmL>
-<bodY>
-<div>
-    Thanks for the registration!
+<html>
+<body>
+<div id="content">
+    <?php echo 'Thanks for your registration'?>
 </div>
-</bodY>
-</htmL>
+</body>
+</html>

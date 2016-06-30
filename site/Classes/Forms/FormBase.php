@@ -1,20 +1,20 @@
 <?php
-
+/**
+ * Abstract Form Base Class
+ */
 abstract class FormBase
 {
     public $models = [];
     public $config = [];
     protected $fields = [];
     protected $data;
-    public $isValid;
-
+    public $isValid = false;
 
     /**
-     * FormBase constructor.
      * @param $models
-     * @param null $params
+     * @param array $params
      */
-    public function __construct($models,$params = null)
+    public function __construct($models, $params = null)
     {
         $this->models = $models;
         $this->config = $params;
@@ -23,77 +23,86 @@ abstract class FormBase
     /**
      * @return string
      */
-    public function getStartTag(){
+    public function getStartTag()
+    {
         $config = $this->config;
         $form = "<form";
-        $form .= $config['id'] ? "id = \"{$config['id']}\"" :null;
-        $form .= $config['name'] ? " name=\"{$config['name']}\"" : null;
-        $form .= $config['action'] ? " action=\"{$config['action']}\"" : null;
-        $form .= $config['method'] ? " method=\"{$config['method']}\"" : null;
-        $form .= '>';
-        return $form;
+        $form .= $config['id'] ? " id=\"{$config['id']}\"" : null;
+
     }
 
     /**
+     * Generates fields from a configuration array
      * @return bool
      */
-    public function generateFields(){
+    public function generateFields()
+    {
         $config = $this->config;
         $newField = null;
-        foreach ($config['fields'] as $field){
+        foreach ($config['fields'] as $field) {
             $newField = $this->generateField($field);
         }
-        if(!$newField){
+
+        if (!$newField) {
             return false;
-        }else{
-            !empty($field['value']) ?$newField->setValue($field['value']) :null;
-            !empty($field['name']) ?$newField->setName($field['name']) :null;
+        } else {
+            //Set common fields
+            !empty($field['value']) ? $newField->setValue($field['value']) : null;
+            !empty($field['name']) ? $newField->setName($field['name']) : null;
             !empty($field['required']) ? $newField->setRequired($field['required']) : null;
-            !empty($filed['priority']) ? $this->fields[$field['priority']] = $newField :null;
+            !empty($field['priority']) ? $this->fields[$field['priority']] = $newField : null;
         }
+
         ksort($this->fields);
         return true;
     }
 
     /**
      * @param $field
-     * @return Checkbox|Password|Select|string|Submit|Text
+     * @return Checkbox|Hidden|Select|string|Submit|Text
      */
-    public function generateField($field){
+    public function generateField($field)
+    {
         $newField = '';
-        switch ($field['type']){
+        switch ($field['type']) {
             case 'text':
                 require_once CLASSES . 'Forms/Inputs/Text.php';
                 $newField = new Text();
-                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
-                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['name'] ? $newField->setName($field['name']) : null;
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'password':
                 require_once CLASSES . 'Forms/Inputs/Password.php';
                 $newField = new Password();
-                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
-                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['name'] ? $newField->setName($field['name']) : null;
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'submit':
                 require_once CLASSES . 'Forms/Inputs/Submit.php';
                 $newField = new Submit();
                 break;
+            case 'hidden':
+                require_once CLASSES . 'Forms/Inputs/Hidden.php';
+                $newField = new Hidden();
+                $field['value'] ? $newField->setValue($field['value']) : null;
+                $field['name'] ? $newField->setName($field['name']) : null;
+                $field['validator'] ? $newField->setValidators($field['validator']) : null;
+                break;
             case 'checkbox':
                 require_once CLASSES . 'Forms/Inputs/Checkbox.php';
                 $newField = new Checkbox();
-                $field['type'] ? $newField->setType($field['type']) :null;
+                $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
-                $field['name'] ? $newField->setName($field['name']) :null;
+                $field['name'] ? $newField->setName($field['name']) : null;
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'select':
-                require_once CLASSES. 'Forms/Inputs/Option.php';
-                require_once  CLASSES . 'Forms/Inputs/Select.php';
-                $newField = new Select();
+                require_once CLASSES . 'Forms/Inputs/Select.php';
+                require_once CLASSES . 'Forms/Inputs/Option.php';
                 $newField = new Select();
                 $values = null;
                 $field['multiple'] ? $newField->setMultiple($field['multiple']) : null;
@@ -108,10 +117,11 @@ abstract class FormBase
 
     /**
      * @param $field
-     * @return bool|Checkbox|Password|Select|string|Submit|Text
+     * @return bool|Checkbox|Hidden|Select|string|Submit|Text
      */
-    public function addField($field){
-        if ($newField = $this->generateField($field)){
+    public function addField($field)
+    {
+        if ($newField = $this->generateField($field)) {
             $this->fields[$field['priority']] = $newField;
             return $newField;
         };
@@ -122,49 +132,57 @@ abstract class FormBase
      * @param $data
      * @return $this
      */
-    public function setData($data){
+    public function setData($data)
+    {
         $this->data = $data;
         return $this;
     }
 
     /**
-     * @return bool
+     * @return mixed
      */
-    public function valudate()
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     *Validate the form
+     */
+    public function validate()
     {
         $invalidCount = 0;
         foreach ($this->data as $key => $value) {
             foreach ($this->fields as $field) {
                 if ($field->getName() == $key && $key !== 'submit') {
-                    foreach ($field->getValidators() as $validator) {
+                    foreach($field->getValidators() as $validator){
                         if (!$validator->validate($value)) {
                             $invalidCount++;
                         }
                     }
-                    if (!$invalidCount) $field->setValid();
+                    if(!$invalidCount)$field->setValid();
                     break;
                 }
             }
         }
-        return $this->isValid = $invalidCount ? true:false;
+        return $this->isValid = $invalidCount ? false : true;
     }
 
     /**
      * @return array
      */
-    public function getFields(){
+    public function getFields()
+    {
         return $this->fields;
     }
 
     /**
-     * @param $field
-     * @return bool|mixed
+     * @return array
      */
-    public function getField($field){
-//        var_dump($field);
+    public function getField($field)
+    {
         foreach($this->fields as $value){
-            var_dump($value->getName());
-            if ($value->getName() === strtolower($field)){
+            if($value->getName() === strtolower($field)){
                 return $value;
             }
         }
@@ -176,7 +194,7 @@ abstract class FormBase
      * @param $value
      * @return $this
      */
-    public function setField($field,$value){
+    public function setField($field, $value){
         $test = $this->getField($field);
         $test->setValue($value);
         return $this;
@@ -185,8 +203,8 @@ abstract class FormBase
     /**
      * @return string
      */
-    public function getEndTag(){
+    public function getEndTag()
+    {
         return '</form>';
     }
-
 }

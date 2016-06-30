@@ -1,7 +1,7 @@
-<htmL>
+<html>
 <body>
-<div>
-    Invalid input, please try again!
+<div id="content">
+    <?php echo 'Invalid credentials, you\'re out of here.'?>
 </div>
 </body>
-</htmL>
+</html>

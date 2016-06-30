@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Alnum Validator
+ */
 class Alnum implements ValidatorInterface
 {
     /**
@@ -9,7 +11,10 @@ class Alnum implements ValidatorInterface
     public function validate($value = null)
     {
         if (empty($value)) return false;
-        if (ctype_alnum($value))return true;
+
+        if (ctype_alnum($value)) {
+            return true;
+        }
         return false;
     }
 }

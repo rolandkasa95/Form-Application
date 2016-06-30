@@ -1,47 +1,47 @@
 <?php
-
+/**
+ * StringLength Validator
+ */
 class StringLength implements ValidatorInterface
 {
-    public $maximum;
     public $minimum;
+    public $maximum;
 
     /**
      * @param null $value
      * @return bool
      */
-    public function validate($value = null)
-    {
-        if (empty($value)) return false;
-        if (!is_string($value || $this->minimum || $this->maximum)) return false;
-        if (strlen($value)<$this->maximum && strlen($value)>$this->minimum){
+    public function validate($value = null){
+        if(!is_string($value)
+            || !$this->minimum
+            || !$this->maximum)return false;
+        $length = strlen($value);
+        if($length <= $this->maximum && $length >= $this->minimum) {
             return true;
         }
         return false;
     }
 
     /**
-     * @param mixed $maximum
+     * @param $values
      */
-    public function setMaximum($maximum)
-    {
-        $this->maximum = $maximum;
-    }
-
-    /**
-     * @param mixed $minimum
-     */
-    public function setMinimum($minimum)
-    {
-        $this->minimum = $minimum;
-    }
-
-    /**
-     * @param null $data
-     */
-    public function setValues($data = null){
-        foreach ($data as $key => $value){
+    public function setValues($values){
+        foreach($values as $key => $value){
             $this->$key = $value;
         }
     }
 
+    /**
+     * @param $value
+     */
+    public function setMinimum($value){
+        $this->minimum = $value;
+    }
+
+    /**
+     * @param $value
+     */
+    public function setMaximum($value){
+        $this->maximum = $value;
+    }
 }

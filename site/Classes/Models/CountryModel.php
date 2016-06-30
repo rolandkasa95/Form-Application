@@ -1,31 +1,34 @@
 <?php
+/**
+ * Country Model Class
+ */
 
 class CountryModel implements ModelInterface
 {
     protected $db;
 
     /**
-     * CountryModel constructor.
      * @param $pdo
      */
-    public function __construct($pdo)
-    {
-        $this->db=ObjectFactoryService::getDb(require 'Config/config.php');
+    public function __construct($pdo){
+        $this->db = $pdo;
     }
 
     /**
      * @return mixed
      */
     public function getCountries(){
-        $sql = 'SELECT * FROM country';
-        var_dump($sql);
+        $sql = 'SELECT name FROM country';
         try{
-            $statement = $this->db->query($sql);
-            $result = $statement->fetchAll(PDO::FETCH_COLUMN);
-            sort($result);
-            return $result;
-        } catch (PDOException $e){
-            echo "Failed constructing the query: " . $e->getMessage();
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_COLUMN);
+            var_dump($results);
+            sort($results);
+            return $results;
+        }catch(PDOException $e){
+            //Log error ...
+            echo $e->getMessage();
         }
     }
 }

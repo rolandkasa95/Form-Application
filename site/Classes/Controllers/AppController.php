@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Class AppController
+ */
 class AppController
 {
     const USERS_TABLE = 'users';
@@ -7,29 +9,50 @@ class AppController
     protected $view;
     protected $models;
 
+    /**
+     * Initial Controller method
+     */
     public function init()
     {
         $config = require 'Config/config.php';
-        $this->models = ['user' => ObjectFactoryService::getModel('UserModel',$config),
-        'country'=> ObjectFactoryService::getModel('CountryModel',$config)];
+        $this->models = [
+            'user' => ObjectFactoryService::getModel('UserModel', $config),
+            'country' => ObjectFactoryService::getModel('CountryModel', $config)
+        ];
         $this->view = new View();
 
-        if(!$_POST && empty($_GET['action'])){
-            $this->form = ObjectFactoryService::getForm('LoginForm',$this->models);
+        //Present login or registration form
+        if (!$_POST && empty($_GET['action'])) {
+            $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
+
+            //Set the token field into the session
             $this->saveSessionToken();
-            $this->view->set('form',$this->form);
+
+            $this->view->set('form', $this->form);
             $this->view->render('login');
-        }elseif ($_GET && $_GET['action']){
-            $this->form = ObjectFactoryService::getForm('RegisterForm',$this->models);
+        } //Present register form
+        elseif ($_GET && $_GET['action'] === 'register') {
+            $this->form = ObjectFactoryService::getForm('RegisterForm',
+$this->models);
+
+            //Set the token field into the session
             $this->saveSessionToken();
-            $this->view->set('form',$this->form);
+
+            $this->view->set('form', $this->form);
             $this->view->render('register');
-        }elseif ($_POST && $_POST['submit']){
+        }
+
+        //Process submitted form
+        elseif ($_POST && $_POST['submit']) {
             $session = ObjectFactoryService::getSession();
             $token = $session->get('token');
+
             if ($_POST['submit'] === 'login') $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
             if ($_POST['submit'] === 'register') $this->form = ObjectFactoryService::getForm('RegisterForm', $this->models);
-            $this->form->setField('token',$token);
+
+            //Pull the token from the session and set it in the form for validation
+            $this->form->setField('token', $token);
+
             $this->form->setData($_POST);
             if ($this->form->validate()) {
                 if ($this->form->config['name'] === 'login') $this->login();
@@ -37,32 +60,60 @@ class AppController
             } else {
                 $this->view->render('invalid');
             }
-        }elseif ($_GET && $_GET['action'] === 'logout') {
+        } //Logout the user
+        elseif ($_GET && $_GET['action'] === 'logout') {
             $this->logout();
         }
     }
 
-
-    public function saveSessionToken(){
+    /**
+     * Save session token
+     */
+    public function saveSessionToken()
+    {
+        //Set the token field into the session
         $session = ObjectFactoryService::getSession();
-        $session->save(['token' => $this->form->getField('username')->getValue()]);
+        $session->save(['token' => $this->form->getField('token')->getValue()]);
     }
 
-    public function login(){
-        $user = $this->models['user']->autenticate($this->form->getData());
-        if(!empty($user)){
+    /**
+     * Login user
+     */
+    public function login()
+    {
+        //Code to authenticate user
+        $user = $this->models['user']->authenticate($this->form->getData());
+        if ($user) {
             $this->view->user = $user;
+            //Render some "Welcome"
             $this->view->render('welcome');
-        }else{
+        } else {
+            //Show no remorse
             $this->view->render('invalid');
         }
     }
 
-    public function logout(){
+    /**
+     *Logout user
+     */
+    public function logout()
+    {
         $session = ObjectFactoryService::getSession();
         $session->destroy();
         $url = strip_tags($_SERVER['HTTP_REFERER']);
         header("Location: $url");
         exit;
+    }
+
+    /**
+     * Register new user
+     */
+    public function register()
+    {
+        //Code to save the new user
+        $this->models['user']->saveUser($this->form->getData());
+
+        //Say "thanks"
+        $this->view->render('thanks');
     }
 }

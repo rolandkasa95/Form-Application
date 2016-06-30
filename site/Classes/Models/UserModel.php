@@ -1,12 +1,13 @@
 <?php
-
+/**
+ * User Model Class
+ */
 class UserModel implements ModelInterface
 {
-
+    
     protected $db;
 
     /**
-     * UserModel constructor.
      * @param $pdo
      */
     public function __construct($pdo)
@@ -17,53 +18,59 @@ class UserModel implements ModelInterface
     /**
      * @return mixed
      */
-    public function getUsers(){
-        $sql= 'Select * from `users`';
-        try{
-            return $this->db->query($sql,PDO::FETCH_ASSOC);
-        }catch (PDOException $e){
-            echo "Errore constucting the query: " . $e->getMessage();
+    public function getUsers()
+    {
+        $sql = "SELECT * FROM `users`";
+        try {
+            return $this->db->query($sql, PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            //Log error ...
+            echo $e->getMessage();
         }
     }
 
     /**
-     * @param $data
-     * @return bool
+     * @return mixed
      */
-    public function authenticate($data){
-        $sql = "select * from users where username='{$data['username']}'";
+    public function authenticate($data)
+    {
+        $sql = "SELECT * FROM users WHERE username = '{$data['username']}'";
         try {
-            $statement = $this->db->query($sql);
-            $result = $statement->fetch(PDO::FETCH_ASSOC);
-            if ($result && passowrd_verify($data['password'], $result['password'])) {
+            $stmt = $this->db->query($sql);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            if($result && password_verify($data['password'], $result['password'])){
                 return $result;
-            }else{
+            } else {
                 return false;
             }
-        }catch(PDOException $e){
-            echo "Error atenticating the user: " . $e->getMessage();
+        } catch (PDOException $e) {
+            //Log error ...
         }
     }
 
     /**
      * @param $data
      */
-    public function saveUser($data){
-        $hash = password_hash($data['password'],PASSWORD_DEFAULT);
-        $sql = "INSERT INTO `users` (`username`,`passowrd`,`first_name`,`last_name`,`email`,`email_preferred_contact`,`country`) VALUES (:username, :password, :first_name, :last_name, :email, :email_preferred_contact, :country)";
+    public function saveUser($data)
+    {
+        //Encrypt the password
+        $hash = password_hash($data['password'], PASSWORD_DEFAULT);
 
-        try{
-            $statemet = $this->db->prepare($sql);
-            $statemet->bindParam(':username',$data['username'],PDO::PARAM_STR,50);
-            $statemet->bindParam(':password',$hash,PDO::PARAM_STR,255);
-            $statemet->bindParam(':last_name',$data['last_name'],PDO::PARAM_STR,50);
-            $statemet->bindParam(':first_name',$data['first_name'],PDO::PARAM_STR,50);
-            $statemet->bindParam(':email',$data['email'],PDO::PARAM_STR,50);
-            $statemet->bindParam(':email_preferred_contact',$data['email_preferred_contact'],PDO::PARAM_STR,1);
-            $statemet->bindParam(':country',$data['country'],PDO::PARAM_STR,100);
-            $statemet->execute();
-        }catch(PDOException $e){
-            echo 'Error ocurring registering: ' . $e->getMessage();
+        $sql = "INSERT INTO `users`(`username`, `password`, `first_name`, `last_name`, `email`, `email_preferred_contact`, `country`) VALUES (:username, :password, :first_name, :last_name, :email, :email_preferred_contact, :country)";
+
+        try {
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':username', $data['username'], PDO::PARAM_STR, 50);
+            $stmt->bindParam(':password', $hash, PDO::PARAM_STR, 255);
+            $stmt->bindParam(':first_name', $data['first_name'], PDO::PARAM_STR, 50);
+            $stmt->bindParam(':last_name', $data['last_name'], PDO::PARAM_STR, 50);
+            $stmt->bindParam(':email', $data['email'], PDO::PARAM_STR, 50);
+            $stmt->bindParam(':email_preferred_contact', $data['email_preferred_contact'], PDO::PARAM_STR, 1);
+            $stmt->bindParam(':country', $data['country'], PDO::PARAM_STR, 100);
+            $stmt->execute();
+        } catch (PDOException $e) {
+            //Log error ...
+            echo $e->getMessage();
         }
     }
 }

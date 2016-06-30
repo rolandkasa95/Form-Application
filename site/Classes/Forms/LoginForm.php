@@ -1,18 +1,23 @@
 <?php
-
+/**
+ * Login Form Class
+ */
 class LoginForm extends FormCommon implements FormInterface
 {
+    /**
+     * @param $models
+     */
     public function __construct($models)
     {
         $params = [
             'name' => 'login',
             'id' => 'form1',
-            'method' => 'POST',
-            'action' => 'index.php'
+            'method' => 'post',
+            'action' => 'index.php',
         ];
-
         parent::__construct($models, $params);
 
+        //Add a username field
         $this->addField([
             'label' => 'Username',
             'type' => 'text',
@@ -21,15 +26,16 @@ class LoginForm extends FormCommon implements FormInterface
             'required' => true,
             'value' => '',
             'validator' => [
-              'StringLength' => [
-                  'minimum' => 5,
-                  'maximum' => 40
-              ],
+                'StringLength' => [
+                    'minimum' => 8,
+                    'maximum' => 30,
+                ],
                 'alnum',
                 'required',
             ],
         ]);
 
+        //Add a password field
         $this->addField([
             'label' => 'Password',
             'type' => 'password',
@@ -37,18 +43,20 @@ class LoginForm extends FormCommon implements FormInterface
             'priority' => 2,
             'required' => true,
             'value' => '',
-            'validator' => [
+            'validator' =>[
                 'StringLength' => [
                     'minimum' => 8,
-                    'maximum' => 100,
+                    'maximum' => 30,
                 ],
                 'required',
             ],
         ]);
 
+        //Adjust the button attributes
         $button = $this->getField('Submit');
-        $button->setValue('logion');
+        $button->setValue('login');
 
+        //Sort the fields by priority
         ksort($this->fields);
     }
 }
