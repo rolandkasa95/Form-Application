@@ -19,11 +19,13 @@ class AppController
             'user' => ObjectFactoryService::getModel('UserModel', $config),
             'country' => ObjectFactoryService::getModel('CountryModel', $config)
         ];
+
         $this->view = new View();
 
         //Present login or registration form
         if (!$_POST && empty($_GET['action'])) {
-            
+            $loginController = new LoginController();
+            $loginController->init();
         } //Present register form
         elseif ($_GET && $_GET['action'] === 'register') {
             $this->form = ObjectFactoryService::getForm('RegisterForm',

@@ -1,17 +1,17 @@
 <?php
 
-
-
 class LoginController extends AppController
 {
     public function init(){
         $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
 
         //Set the token field into the session
-        $this->$saveSessionToken();
+        $this->saveSessionToken();
+
+        $this->view = new View();
 
         $this->view->set('form', $this->form);
-        $this->view->render('login');
+        $this->view ->render('login');
     }
     /**
      * Login page loaded
