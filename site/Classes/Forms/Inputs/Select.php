@@ -1,4 +1,6 @@
 <?php
+
+namespace Forms\Inputs;
 /**
  * Select Input Class
  */

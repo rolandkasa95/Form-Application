@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Password.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -30,27 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submitDataController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/submitDataController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -63,38 +46,78 @@
       <file leaf-file-name="BaseInput.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="36">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
+      <file leaf-file-name="Checkbox.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormCommon.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormCommon.php">
+      <file leaf-file-name="Hidden.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormInterface.php">
+      <file leaf-file-name="Option.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Select.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Submit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -105,26 +128,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -167,18 +170,24 @@
         <option value="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Duplication.php" />
         <option value="$PROJECT_DIR$/site/Classes/Models/CountryModel.php" />
-        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" />
         <option value="$PROJECT_DIR$/site/index.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/configController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/submitDataController.php" />
-        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/FormCommon.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/LoginForm.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Password.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php" />
       </list>
     </option>
   </component>
@@ -525,14 +534,7 @@
       <workItem from="1467217049689" duration="16966000" />
       <workItem from="1467370145514" duration="4000" />
       <workItem from="1467402008779" duration="2682000" />
-      <workItem from="1467630014031" duration="6252000" />
-    </task>
-    <task id="LOCAL-00045" summary="New: added RegisterForm: Email + EmailPreferredContact">
-      <created>1467203085871</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1467203085871</updated>
+      <workItem from="1467630014031" duration="6319000" />
     </task>
     <task id="LOCAL-00046" summary="New: added Input/InputInterface">
       <created>1467203173859</created>
@@ -870,11 +872,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467637338111</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="New: namespaces to Forms">
+      <created>1467637705062</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1467637705062</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47190000" />
+    <option name="totallyTimeSpent" value="47257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added Input/Submit" />
     <MESSAGE value="New: added Input/Text" />
     <MESSAGE value="Update: index--loaded the AppController" />
     <MESSAGE value="New: rearranged everything" />
@@ -946,7 +954,8 @@
     <MESSAGE value="New: added submitDataController: submit" />
     <MESSAGE value="New: single responsibility principle for Controllers done" />
     <MESSAGE value="New: namespaces to Controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: namespaces to Controllers" />
+    <MESSAGE value="New: namespaces to Forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: namespaces to Forms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -955,8 +964,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Text.php" />
     <entry file="file://$PROJECT_DIR$/site/loader_stupid.php" />
     <entry file="file://$PROJECT_DIR$/puphpet/config.yaml">
@@ -969,27 +976,6 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormInteface.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php" />
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Validators/StringLength.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1137,14 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Alnum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1173,14 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1269,14 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1321,6 +1283,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Checkbox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Hidden.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Option.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
