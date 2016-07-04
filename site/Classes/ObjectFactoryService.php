@@ -68,7 +68,11 @@ abstract class ObjectFactoryService
     public static function getModel($model, $config)
     {
         if (!isset(self::$models[$model])){
-            self::$models[$model] = new $model(self::getDb($config));
+            if($model === 'UserModel') {
+                self::$models[$model] = new Models\UserModel(self::getConfig($config));
+            }else{
+                self::$models[$model] = new Models\CountryModel(self::getConfig($config));
+            }
         };
         return self::$models[$model];
     }
@@ -83,9 +87,9 @@ abstract class ObjectFactoryService
     {
         if (!$form && !$model) return false;
         if ($form === 'LoginForm'){
-            return new Forms\LoginForm();
+            return new Forms\LoginForm($model);
         }elseif ($form === 'RegisterForm' ){
-            return new Forms\RegisterForm();
+            return new Forms\RegisterForm($model);
         }
         }
 }

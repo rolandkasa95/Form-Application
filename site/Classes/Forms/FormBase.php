@@ -75,7 +75,7 @@ abstract class FormBase
         switch ($field['type']) {
             case 'text':
                 require_once CLASSES . 'Forms/Inputs/Text.php';
-                $newField = new Text();
+                $newField = new Inputs\Text();
                 $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) : null;
@@ -83,7 +83,7 @@ abstract class FormBase
                 break;
             case 'password':
                 require_once CLASSES . 'Forms/Inputs/Password.php';
-                $newField = new Password();
+                $newField = new Inputs\Password();
                 $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) : null;
@@ -91,18 +91,18 @@ abstract class FormBase
                 break;
             case 'submit':
                 require_once CLASSES . 'Forms/Inputs/Submit.php';
-                $newField = new Submit();
+                $newField = new Inputs\Submit();
                 break;
             case 'hidden':
                 require_once CLASSES . 'Forms/Inputs/Hidden.php';
-                $newField = new Hidden();
+                $newField = new Inputs\Hidden();
                 $field['value'] ? $newField->setValue($field['value']) : null;
                 $field['name'] ? $newField->setName($field['name']) : null;
                 $field['validator'] ? $newField->setValidators($field['validator']) : null;
                 break;
             case 'checkbox':
                 require_once CLASSES . 'Forms/Inputs/Checkbox.php';
-                $newField = new Checkbox();
+                $newField = new Inputs\Checkbox();
                 $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) : null;
@@ -111,7 +111,7 @@ abstract class FormBase
             case 'select':
                 require_once CLASSES . 'Forms/Inputs/Select.php';
                 require_once CLASSES . 'Forms/Inputs/Option.php';
-                $newField = new Select();
+                $newField = new Inputs\Select();
                 $values = null;
                 $field['multiple'] ? $newField->setMultiple($field['multiple']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;

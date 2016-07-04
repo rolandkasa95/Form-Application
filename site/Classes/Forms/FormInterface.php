@@ -1,4 +1,6 @@
 <?php
+
+namespace Forms;
 /**
  * Form Interface
  */

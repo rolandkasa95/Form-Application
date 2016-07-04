@@ -13,7 +13,7 @@ class CountryModel implements ModelInterface
      * @param $pdo
      */
     public function __construct($pdo){
-        $this->db = ObjectFactoryService::getDb(ObjectFactoryService::getConfig());
+        $this->db = \ObjectFactoryService::getDb(\ObjectFactoryService::getConfig());
     }
 
     /**

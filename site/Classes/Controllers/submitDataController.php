@@ -1,6 +1,8 @@
 <?php
 namespace Controllers;
 
+use Views\View;
+
 class submitDataController extends AppController
 {
     
@@ -8,13 +10,13 @@ class submitDataController extends AppController
      * Submit data to the Database
      */
     public function Submit(){
-        $session = ObjectFactoryService::getSession();
+        $session = \ObjectFactoryService::getSession();
         $token = $session->get('token');
 
         $this->view = new View();
 
-        if ($_POST['submit'] === 'login') $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
-        if ($_POST['submit'] === 'register') $this->form = ObjectFactoryService::getForm('RegisterForm', $this->models);
+        if ($_POST['submit'] === 'login') $this->form = \ObjectFactoryService::getForm('LoginForm', $this->models);
+        if ($_POST['submit'] === 'register') $this->form = \ObjectFactoryService::getForm('RegisterForm', $this->models);
 
         //Pull the token from the session and set it in the form for validation
         $this->form->setField('token', $token);

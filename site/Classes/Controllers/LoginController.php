@@ -1,7 +1,7 @@
 <?php
 namespace Controllers;
 
-use View\View;
+use Views\View;
 
 class LoginController extends AppController
 {
