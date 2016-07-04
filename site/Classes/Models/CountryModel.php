@@ -11,7 +11,7 @@ class CountryModel implements ModelInterface
      * @param $pdo
      */
     public function __construct($pdo){
-        $this->db = $pdo;
+        $this->db = ObjectFactoryService::getDb(ObjectFactoryService::getConfig());
     }
 
     /**
@@ -28,6 +28,20 @@ class CountryModel implements ModelInterface
         }catch(PDOException $e){
             //Log error ...
             echo $e->getMessage();
+        }
+    }
+
+    public function getCountriesInhabits($result){
+        $sql = 'SELECT inhabits from country WHERE name=\"' . $result . "\"";
+        try{
+            $statement = $this->db->prepare($sql);
+            $statement->execute();
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            var_dump($result);
+            sort($result);
+            return $result;
+        }catch (PDOException $e){
+            echo "Failed connecting:" . $e->getMessage();
         }
     }
 }

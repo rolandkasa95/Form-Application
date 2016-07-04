@@ -21,10 +21,10 @@ class Select extends BaseInput implements InputInterface
         $select .= $this->required ? " required":null;
         $select .= $this->multiple ? " multiple":null;
         $select .= ">";
-        foreach($this->options as $option){
-            $select .= "<option>";
-            $select .= $option;
-            $select .= "</option>";
+        $option_object = new Option();
+        $results = $option_object->getOptions($this->options);
+        foreach ($results as $result){
+          $select .= $result;
         }
         $select .= "</select>";
         return $select;

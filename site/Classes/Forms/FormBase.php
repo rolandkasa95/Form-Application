@@ -31,6 +31,7 @@ abstract class FormBase
         $form .= $config['name'] ? " name=\"{$config['name']}\"" : null;
         $form .= $config['action'] ? " action=\"{$config['action']}\"" :null;
         $form .= $config['method'] ? " method=\"{$config['method']}\"" : null;
+        $form .=">";
         return $form;
     }
 
