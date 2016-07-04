@@ -12,6 +12,10 @@ class LoginController extends AppController
 
         $this->view->set('form', $this->form);
         $this->view ->render('login');
+
+        if ($_POST && $_POST['submit']) {
+            $session = ObjectFactoryService::getSession();
+            $token = $session->get('token');
     }
     /**
      * Login page loaded
