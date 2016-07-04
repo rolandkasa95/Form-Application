@@ -23,13 +23,7 @@ class AppController
 
         //Present login or registration form
         if (!$_POST && empty($_GET['action'])) {
-            $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
-
-            //Set the token field into the session
-            $this->saveSessionToken();
-
-            $this->view->set('form', $this->form);
-            $this->view->render('login');
+            
         } //Present register form
         elseif ($_GET && $_GET['action'] === 'register') {
             $this->form = ObjectFactoryService::getForm('RegisterForm',
@@ -74,23 +68,6 @@ $this->models);
         //Set the token field into the session
         $session = ObjectFactoryService::getSession();
         $session->save(['token' => $this->form->getField('token')->getValue()]);
-    }
-
-    /**
-     * Login user
-     */
-    public function login()
-    {
-        //Code to authenticate user
-        $user = $this->models['user']->authenticate($this->form->getData());
-        if ($user) {
-            $this->view->user = $user;
-            //Render some "Welcome"
-            $this->view->render('welcome');
-        } else {
-            //Show no remorse
-            $this->view->render('invalid');
-        }
     }
 
     /**
