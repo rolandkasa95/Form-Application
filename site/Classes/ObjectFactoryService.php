@@ -69,9 +69,9 @@ abstract class ObjectFactoryService
     {
         if (!isset(self::$models[$model])){
             if($model === 'UserModel') {
-                self::$models[$model] = new Models\UserModel(self::getConfig($config));
+                self::$models[$model] = new Models\UserModel(self::getDb($config));
             }else{
-                self::$models[$model] = new Models\CountryModel(self::getConfig($config));
+                self::$models[$model] = new Models\CountryModel(self::getDb($config));
             }
         };
         return self::$models[$model];

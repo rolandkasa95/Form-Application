@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/submitDataController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/submitDataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/FormInterface.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/FormInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/BaseInput.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Forms/Inputs/InputInterface.php" afterPath="$PROJECT_DIR$/site/Classes/Forms/Inputs/InputInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Models/CountryModel.php" afterPath="$PROJECT_DIR$/site/Classes/Models/CountryModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Models/ModelInterface.php" afterPath="$PROJECT_DIR$/site/Classes/Models/ModelInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" afterPath="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Validators/Token.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/Token.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Views/View.php" afterPath="$PROJECT_DIR$/site/Classes/Views/View.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -60,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
-              <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
+              <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -97,12 +87,12 @@
       <file leaf-file-name="UserModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Classes/Models/UserModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="702">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
-                <marker date="1467637793026" expanded="true" signature="324:343" ph="SELECT * FRO... users" />
-                <marker date="1467637793026" expanded="true" signature="636:694" ph="SELECT * FRO... users" />
-                <marker date="1467637793026" expanded="true" signature="1297:1497" ph="INSERT INTO users... " />
+                <marker date="1467642561736" expanded="true" signature="324:343" ph="SELECT * FRO... users" />
+                <marker date="1467642561736" expanded="true" signature="636:694" ph="SELECT * FRO... users" />
+                <marker date="1467642561736" expanded="true" signature="1297:1497" ph="INSERT INTO users... " />
               </folding>
             </state>
           </provider>
@@ -180,7 +170,6 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Submit.php" />
         <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Text.php" />
-        <option value="$PROJECT_DIR$/site/Classes/Models/UserModel.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Alnum.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Alpha.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Boolean.php" />
@@ -204,9 +193,10 @@
         <option value="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/submitDataController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Token.php" />
-        <option value="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
         <option value="$PROJECT_DIR$/site/Classes/Models/ModelInterface.php" />
         <option value="$PROJECT_DIR$/site/Classes/Models/CountryModel.php" />
+        <option value="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Models/UserModel.php" />
       </list>
     </option>
   </component>
@@ -517,14 +507,7 @@
       <workItem from="1467217049689" duration="16966000" />
       <workItem from="1467370145514" duration="4000" />
       <workItem from="1467402008779" duration="2682000" />
-      <workItem from="1467630014031" duration="11001000" />
-    </task>
-    <task id="LOCAL-00051" summary="New: added Input/BaseInput: setValidators">
-      <created>1467203713721</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1467203713721</updated>
+      <workItem from="1467630014031" duration="11125000" />
     </task>
     <task id="LOCAL-00052" summary="New: added Input/BaseInput: getLabelTag + setLabel">
       <created>1467203859393</created>
@@ -862,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467639653170</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="New: This is like 10 commits i forgot to do...">
+      <created>1467642474770</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1467642474770</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51939000" />
+    <option name="totallyTimeSpent" value="52063000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -933,7 +923,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update: fixed some bugs v1.2" />
     <MESSAGE value="Update: fixed some bugs v1.3" />
     <MESSAGE value="Update: fixed some bugs v1.4 Finally it works" />
     <MESSAGE value="Update: fixed some bugs v1.4 Finally it works v1.1" />
@@ -958,7 +947,8 @@
     <MESSAGE value="New: namespaces to Validators" />
     <MESSAGE value="New: namespaces to View" />
     <MESSAGE value="New: added some to namespace autoloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: added some to namespace autoloader" />
+    <MESSAGE value="New: This is like 10 commits i forgot to do..." />
+    <option name="LAST_COMMIT_MESSAGE" value="New: This is like 10 commits i forgot to do..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1319,14 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Models/ModelInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1351,14 +1333,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Models/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="702">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
-            <marker date="1467637793026" expanded="true" signature="324:343" ph="SELECT * FRO... users" />
-            <marker date="1467637793026" expanded="true" signature="636:694" ph="SELECT * FRO... users" />
-            <marker date="1467637793026" expanded="true" signature="1297:1497" ph="INSERT INTO users... " />
+            <marker date="1467642561736" expanded="true" signature="324:343" ph="SELECT * FRO... users" />
+            <marker date="1467642561736" expanded="true" signature="636:694" ph="SELECT * FRO... users" />
+            <marker date="1467642561736" expanded="true" signature="1297:1497" ph="INSERT INTO users... " />
           </folding>
         </state>
       </provider>
