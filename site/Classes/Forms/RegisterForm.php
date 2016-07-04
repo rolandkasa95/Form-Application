@@ -117,6 +117,7 @@ class RegisterForm extends FormCommon implements FormInterface
         ]);
 
         //Add country and data options
+        $this->models = configController::getModels();
         $countries = $this->models['country']->getCountries();
         $this->addField([
             'label' => 'Country',

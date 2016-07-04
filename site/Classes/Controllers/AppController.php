@@ -5,16 +5,17 @@
 class AppController
 {
     const USERS_TABLE = 'users';
-    protected $form;
-    protected $view;
-    protected $models;
+    public $form;
+    public $view;
+    public $models;
 
     /**
      * Initial Controller method
      */
+
+
     public function init()
     {
-
         $loginController = new LoginController();
         $registerController = new RegisterController();
 
@@ -29,8 +30,9 @@ class AppController
 
         //Process submitted form
         elseif ($_POST && $_POST['submit']) {
-           
-        } //Logout the user
+            $submit = new submitDataController();
+            $submit->Submit();
+        }
         elseif ($_GET && $_GET['action'] === 'logout') {
             $this->logout();
         }

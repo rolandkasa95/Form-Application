@@ -17,16 +17,4 @@ class RegisterController extends AppController
         $this->view->set('form', $this->form);
         $this->view->render('register');
     }
-
-    /**
-     * After registration Page initiation
-     */
-    public function register()
-    {
-        //Code to save the new user
-        $this->models['user']->saveUser($this->form->getData());
-
-        //Say "thanks"
-        $this->view->render('thanks');
-    }
 }
