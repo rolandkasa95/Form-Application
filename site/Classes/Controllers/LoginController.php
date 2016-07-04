@@ -1,6 +1,6 @@
 <?php
 
-class LoginController extends AppController, configController
+class LoginController extends AppController
 {
     public function init(){
         $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
@@ -18,7 +18,10 @@ class LoginController extends AppController, configController
      */
     public function login()
     {
+        $this->models = configController::getModels();
         //Code to authenticate user
+
+        var_dump($this->form);
         $user = $this->models['user']->authenticate($this->form->getData());
         if ($user) {
             $this->view->user = $user;

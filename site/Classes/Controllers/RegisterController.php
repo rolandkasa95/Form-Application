@@ -5,8 +5,8 @@ class RegisterController extends AppController
     /**
      * Register Page initiation
      */
-
     public function init(){
+        $this->models = configController::getModels();
         $this->form = ObjectFactoryService::getForm('RegisterForm', $this->models);
 
         //Set the token field into the session

@@ -17,7 +17,7 @@ class AppController
 
         $loginController = new LoginController();
         $registerController = new RegisterController();
-        
+
 
         //Present login or registration form
         if (!$_POST && empty($_GET['action'])) {
