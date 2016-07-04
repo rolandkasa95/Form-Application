@@ -1,4 +1,6 @@
 <?php
+
+namespace Models;
 /**
  * Country Model Class
  */

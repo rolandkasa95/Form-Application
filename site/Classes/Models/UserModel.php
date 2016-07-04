@@ -1,4 +1,6 @@
 <?php
+
+namespace Models;
 /**
  * User Model Class
  */
