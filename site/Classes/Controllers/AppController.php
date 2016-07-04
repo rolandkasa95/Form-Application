@@ -14,28 +14,23 @@ class AppController
      */
     public function init()
     {
+
+        $loginController = new LoginController();
+        $registerController = new RegisterController();
+
+        
         $config = require 'Config/config.php';
         $this->models = [
             'user' => ObjectFactoryService::getModel('UserModel', $config),
             'country' => ObjectFactoryService::getModel('CountryModel', $config)
         ];
 
-        $this->view = new View();
-
         //Present login or registration form
         if (!$_POST && empty($_GET['action'])) {
-            $loginController = new LoginController();
             $loginController->init();
         } //Present register form
         elseif ($_GET && $_GET['action'] === 'register') {
-            $this->form = ObjectFactoryService::getForm('RegisterForm',
-$this->models);
-
-            //Set the token field into the session
-            $this->saveSessionToken();
-
-            $this->view->set('form', $this->form);
-            $this->view->render('register');
+            $registerController->init();
         }
 
         //Process submitted form
@@ -51,8 +46,8 @@ $this->models);
 
             $this->form->setData($_POST);
             if ($this->form->validate()) {
-                if ($this->form->config['name'] === 'login') $this->login();
-                if ($this->form->config['name'] === 'register') $this->register();
+                if ($this->form->config['name'] === 'login') $loginController->login();
+                if ($this->form->config['name'] === 'register') $registerController->register();
             } else {
                 $this->view->render('invalid');
             }
@@ -82,17 +77,5 @@ $this->models);
         $url = strip_tags($_SERVER['HTTP_REFERER']);
         header("Location: $url");
         exit;
-    }
-
-    /**
-     * Register new user
-     */
-    public function register()
-    {
-        //Code to save the new user
-        $this->models['user']->saveUser($this->form->getData());
-
-        //Say "thanks"
-        $this->view->render('thanks');
     }
 }
