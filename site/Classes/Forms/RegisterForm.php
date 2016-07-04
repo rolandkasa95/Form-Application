@@ -1,4 +1,6 @@
 <?php
+
+namespace Forms;
 /**
  * Register Form Class
  */

@@ -1,4 +1,8 @@
 <?php
+
+namespace Forms;
+
+
 /**
  * Abstract Form Base Class
  */
