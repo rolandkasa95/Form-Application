@@ -1,4 +1,6 @@
 <?php
+
+namespace Validators;
 /**
  * Required Validator
  */

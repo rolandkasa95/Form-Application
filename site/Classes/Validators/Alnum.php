@@ -1,4 +1,6 @@
 <?php
+
+namespace Validators;
 /**
  * Alnum Validator
  */

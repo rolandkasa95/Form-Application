@@ -1,4 +1,6 @@
 <?php
+
+namespace Validators;
 /**
  * Sample Static Class Validator
  */

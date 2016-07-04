@@ -1,5 +1,7 @@
 <?php
 
+namespace Validators;
+
 class Duplication implements ValidatorInterface
 {
     protected $db;
