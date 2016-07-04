@@ -10,5 +10,5 @@ Loader::init();
 
 require_once 'Classes/Controllers/AppController.php';
 
-$controller = new AppController();
+$controller = new Controllers\AppController();
 $controller->init();

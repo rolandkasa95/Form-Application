@@ -1,10 +1,12 @@
 <?php
 namespace Controllers;
 
+use View\View;
+
 class LoginController extends AppController
 {
     public function init(){
-        $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);
+        $this->form = \ObjectFactoryService::getForm('LoginForm', $this->models);
 
         //Set the token field into the session
         $this->saveSessionToken();

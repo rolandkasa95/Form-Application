@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Abstract objects factory class
  */
@@ -80,6 +82,10 @@ abstract class ObjectFactoryService
     public static function getForm($form, $model)
     {
         if (!$form && !$model) return false;
-        return new $form($model);
-    }
+        if ($form === 'LoginForm'){
+            return new Forms\LoginForm();
+        }elseif ($form === 'RegisterForm' ){
+            return new Forms\RegisterForm();
+        }
+        }
 }

@@ -8,7 +8,7 @@ class RegisterController extends AppController
      */
     public function init(){
         $this->models = configController::getModels();
-        $this->form = ObjectFactoryService::getForm('RegisterForm', $this->models);
+        $this->form = \ObjectFactoryService::getForm('RegisterForm', $this->models);
 
         //Set the token field into the session
         $this->saveSessionToken();

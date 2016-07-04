@@ -47,7 +47,7 @@ class AppController
     public function saveSessionToken()
     {
         //Set the token field into the session
-        $session = ObjectFactoryService::getSession();
+        $session = \ObjectFactoryService::getSession();
         $session->save(['token' => $this->form->getField('token')->getValue()]);
     }
 
@@ -56,7 +56,7 @@ class AppController
      */
     public function logout()
     {
-        $session = ObjectFactoryService::getSession();
+        $session = \ObjectFactoryService::getSession();
         $session->destroy();
         $url = strip_tags($_SERVER['HTTP_REFERER']);
         header("Location: $url");
