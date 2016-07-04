@@ -1,4 +1,5 @@
 <?php
+namespace Controllers;
 
 class submitDataController extends AppController
 {
@@ -34,7 +35,7 @@ class submitDataController extends AppController
     {
         $this->models = configController::getModels();
         //Code to authenticate user
-        
+
         $user = $this->models['user']->authenticate($this->form->getData());
         if ($user) {
             $this->view->user = $user;

@@ -1,4 +1,7 @@
 <?php
+
+namespace Controllers;
+
 /**
  * Class AppController
  */
