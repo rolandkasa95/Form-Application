@@ -1,6 +1,6 @@
 <?php
 
-class LoginController extends AppController,configController
+class LoginController extends AppController, configController
 {
     public function init(){
         $this->form = ObjectFactoryService::getForm('LoginForm', $this->models);

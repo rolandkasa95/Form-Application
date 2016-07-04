@@ -17,13 +17,7 @@ class AppController
 
         $loginController = new LoginController();
         $registerController = new RegisterController();
-
         
-        $config = require 'Config/config.php';
-        $this->models = [
-            'user' => ObjectFactoryService::getModel('UserModel', $config),
-            'country' => ObjectFactoryService::getModel('CountryModel', $config)
-        ];
 
         //Present login or registration form
         if (!$_POST && empty($_GET['action'])) {

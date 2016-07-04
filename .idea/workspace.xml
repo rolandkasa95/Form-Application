@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/Classes/Controllers/configController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php" afterPath="$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="324">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -48,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/configController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -141,8 +151,9 @@
         <option value="$PROJECT_DIR$/site/Classes/Forms/Inputs/Select.php" />
         <option value="$PROJECT_DIR$/site/index.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php" />
-        <option value="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
         <option value="$PROJECT_DIR$/site/Classes/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Controllers/configController.php" />
+        <option value="$PROJECT_DIR$/site/Classes/Controllers/AppController.php" />
       </list>
     </option>
   </component>
@@ -489,14 +500,7 @@
       <workItem from="1467217049689" duration="16966000" />
       <workItem from="1467370145514" duration="4000" />
       <workItem from="1467402008779" duration="2682000" />
-      <workItem from="1467630014031" duration="1985000" />
-    </task>
-    <task id="LOCAL-00038" summary="New: added FormBase: getField">
-      <created>1467200947873</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1467200947873</updated>
+      <workItem from="1467630014031" duration="2076000" />
     </task>
     <task id="LOCAL-00039" summary="New: added FormBase: setField + getEndTag">
       <created>1467201035476</created>
@@ -834,11 +838,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467631475589</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="New: Added RegisterController: init + register">
+      <created>1467632017393</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1467632017393</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42923000" />
+    <option name="totallyTimeSpent" value="43014000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,7 +896,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: added Input/Options: getLabel + setLabel + isDisabled + setDisabled" />
     <MESSAGE value="New: added Input/Options: isSelected + setSelected + getName + setName" />
     <MESSAGE value="New: added Input/Password" />
     <MESSAGE value="New: added Input/Select" />
@@ -910,7 +920,8 @@
     <MESSAGE value="New: Added LoginController: init + login" />
     <MESSAGE value="New: initiated view object in AppController" />
     <MESSAGE value="New: Added RegisterController" />
-    <option name="LAST_COMMIT_MESSAGE" value="New: Added RegisterController" />
+    <MESSAGE value="New: Added RegisterController: init + register" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: Added RegisterController: init + register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -919,7 +930,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Option.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Password.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Select.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Submit.php" />
@@ -1241,14 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1260,7 +1262,23 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/configController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
