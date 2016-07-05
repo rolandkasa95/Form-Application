@@ -30,7 +30,7 @@ class AppController
 
 
         //Present login or registration form
-        if (!$_POST && 'register'!=$_GET['action']) {
+        if (!$_POST && empty($_GET['action'])) {
             $loginController->init();
         } //Present register form
         elseif ($_GET &&  'register' === $_GET['action'] ) {

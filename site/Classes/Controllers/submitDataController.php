@@ -15,11 +15,11 @@ class submitDataController extends AppController
 
         $this->view = new View();
 
-        if ($_POST['submit'] === 'login') {
+        if ('login' === $_POST['submit']) {
             
             $this->form = \ObjectFactoryService::getForm('LoginForm', $this->models);
         }
-        if ($_POST['submit'] === 'register') 
+        if ('register' === $_POST['submit'])
             $this->form = \ObjectFactoryService::getForm('RegisterForm', $this->models);
         
 
@@ -28,9 +28,9 @@ class submitDataController extends AppController
 
         $this->form->setData($_POST);
         if ($this->form->validate()) {
-            if ($this->form->config['name'] === 'login') 
+            if ('login' === $this->form->config['name'])
                 self::login();
-            if ($this->form->config['name'] === 'register') 
+            if ('register' === $this->form->config['name'])
                 self::register();
         } else {
             $this->view->render('invalid');

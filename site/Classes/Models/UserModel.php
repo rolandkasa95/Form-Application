@@ -41,7 +41,7 @@ class UserModel implements ModelInterface
     {
         $sql = "SELECT * FROM users";
         try {
-            return $this->db->query($sql, PDO::FETCH_ASSOC);
+            return $this->db->query($sql, \PDO::FETCH_ASSOC);
         } catch (\PDOException $e) {
             //Log error ...
             echo $e->getMessage();
