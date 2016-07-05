@@ -2,7 +2,7 @@
 
 namespace Models;
 /**
- * ModelInteface
+ * Model Interface
  */
 interface ModelInterface
 {

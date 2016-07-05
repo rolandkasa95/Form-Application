@@ -19,19 +19,7 @@ class UserModel implements ModelInterface
      */
     public function __construct($pdo)
     {
-        
-//        if ( $pdo instanceof plm ) {
-//             now do stuff
-//        }
-        
-        // die / exception, etc.
-        
         $this->db = \ObjectFactoryService::getDb();
-
-
-        //
-//        ns Models/Ceva
-//    autoloader : require __DIR__ . / Models . / Ceva.class.php
     }
 
     /**
