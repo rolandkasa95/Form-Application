@@ -23,7 +23,7 @@ class AppController
 
     /**
      * Initial Controller method
-     */
+     */ 
     public function init()
     {
         $loginController = new LoginController();

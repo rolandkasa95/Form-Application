@@ -49,6 +49,7 @@ class UserModel implements ModelInterface
     }
 
     /**
+     * @param array $data
      * @return mixed
      */
     public function authenticate($data)

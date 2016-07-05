@@ -193,6 +193,8 @@ abstract class FormBase
     }
 
     /**
+     *
+     * @param object $field
      * @return array
      */
     public function getField($field)

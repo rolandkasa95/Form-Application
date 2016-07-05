@@ -64,6 +64,7 @@ abstract class ObjectFactoryService
      * Provides model class abstraction
      * @param $model
      * @return object $model The model object
+     * @param array $config
      */
     public static function getModel($model, $config)
     {
