@@ -1,6 +1,7 @@
 <?php
 
 namespace Forms;
+use Forms\Inputs\Text;
 
 
 /**
@@ -75,7 +76,7 @@ abstract class FormBase
         switch ($field['type']) {
             case 'text':
                 require_once CLASSES . 'Forms/Inputs/Text.php';
-                $newField = new Inputs\Text();
+                $newField = new Text();
                 $field['type'] ? $newField->setType($field['type']) : null;
                 $field['label'] ? $newField->setLabel($field['label']) : null;
                 $field['name'] ? $newField->setName($field['name']) : null;
@@ -168,8 +169,10 @@ abstract class FormBase
                             $invalidCount++;
                         }
                     }
-                    if(!$invalidCount)$field->setValid();
-                    break;
+                    if ( ! $invalidCount ) {
+                        $field->setValid();
+                        break;
+                    }
                 }
             }
         }

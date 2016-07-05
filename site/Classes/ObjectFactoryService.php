@@ -22,7 +22,7 @@ abstract class ObjectFactoryService
         if (!self::$pdo) {
             try {
                 $config = [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION];
-                self::$pdo = new PDO($connectParams['db']['dsn'],
+                self::$pdo = new \PDO($connectParams['db']['dsn'],
                     $connectParams['db']['user'],
                     $connectParams['db']['pass'],
                     $config);

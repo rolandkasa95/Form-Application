@@ -7,6 +7,9 @@ namespace Models;
 
 class CountryModel implements ModelInterface
 {
+    /**
+     * @var \PDO
+     */
     protected $db;
 
     /**
@@ -24,10 +27,10 @@ class CountryModel implements ModelInterface
         try{
             $stmt = $this->db->prepare($sql);
             $stmt->execute();
-            $results = $stmt->fetchAll(PDO::FETCH_COLUMN);
+            $results = $stmt->fetchAll(\PDO::FETCH_COLUMN);
             sort($results);
             return $results;
-        }catch(PDOException $e){
+        }catch(\PDOException $e){
             //Log error ...
             echo $e->getMessage();
         }
@@ -38,11 +41,11 @@ class CountryModel implements ModelInterface
         try{
             $statement = $this->db->prepare($sql);
             $statement->execute();
-            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $result = $statement->fetchAll(\PDO::FETCH_ASSOC);
             var_dump($result);
             sort($result);
             return $result;
-        }catch (PDOException $e){
+        }catch (\PDOException $e){
             echo "Failed connecting:" . $e->getMessage();
         }
     }

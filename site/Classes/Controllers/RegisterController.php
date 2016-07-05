@@ -1,6 +1,8 @@
 <?php
 namespace Controllers;
 
+use Views\View;
+
 class RegisterController extends AppController
 {
     /**
@@ -15,7 +17,7 @@ class RegisterController extends AppController
 
         $this->view = new View();
 
-        $this->view->set('form', $this->form);
+        $this->view->setForm( $this->form );
         $this->view->render('register');
     }
 }

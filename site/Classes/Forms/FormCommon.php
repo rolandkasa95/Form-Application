@@ -3,7 +3,6 @@ namespace Forms;
 /**
  * Abstract Form Common Class
  */
-Require 'FormBase.php';
 
 abstract class FormCommon extends FormBase
 {

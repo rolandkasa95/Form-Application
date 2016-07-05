@@ -6,6 +6,8 @@ namespace Views;
  */
 class View {
     public $results;
+    
+    private $form;
 
     /**
      * @param $results
@@ -28,5 +30,21 @@ class View {
     public function render($param){
         $param = strtolower($param);
         require LAYOUTS . "$param.php";
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getForm()
+    {
+        return $this->form;
+    }
+
+    /**
+     * @param mixed $form
+     */
+    public function setForm($form)
+    {
+        $this->form = $form;
     }
 }

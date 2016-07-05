@@ -8,7 +8,13 @@ namespace Controllers;
 class AppController
 {
     const USERS_TABLE = 'users';
+    /**
+     * @var \Forms\
+     */
     public $form;
+    /**
+     * @var 
+     */
     public $view;
     public $models;
 
@@ -27,7 +33,7 @@ class AppController
         if (!$_POST && empty($_GET['action'])) {
             $loginController->init();
         } //Present register form
-        elseif ($_GET && $_GET['action'] === 'register') {
+        elseif ($_GET &&  $_GET['action'] =  'register' ) {
             $registerController->init();
         }
 

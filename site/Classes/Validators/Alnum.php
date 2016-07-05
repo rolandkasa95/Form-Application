@@ -12,11 +12,7 @@ class Alnum implements ValidatorInterface
      */
     public function validate($value = null)
     {
-        if (empty($value)) return false;
-
-        if (ctype_alnum($value)) {
-            return true;
-        }
-        return false;
+        return ctype_alnum($value);
+        
     }
 }

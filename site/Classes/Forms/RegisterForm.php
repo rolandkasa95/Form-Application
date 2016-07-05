@@ -1,6 +1,8 @@
 <?php
 
 namespace Forms;
+
+use Controllers\configController;
 /**
  * Register Form Class
  */
