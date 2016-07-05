@@ -72,9 +72,11 @@
       <file leaf-file-name="thanks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/Layouts/thanks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="54">
+              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+              <folding>
+                <marker date="1467724767218" expanded="true" signature="144:217" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -384,7 +386,7 @@
       <workItem from="1467217049689" duration="16966000" />
       <workItem from="1467370145514" duration="4000" />
       <workItem from="1467402008779" duration="2682000" />
-      <workItem from="1467630014031" duration="24530000" />
+      <workItem from="1467630014031" duration="24647000" />
     </task>
     <task id="LOCAL-00058" summary="New: added Input/Hidden: __construct() + getInput">
       <created>1467204392946</created>
@@ -733,7 +735,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65468000" />
+    <option name="totallyTimeSpent" value="65585000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1241,9 +1243,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Layouts/thanks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+          <folding>
+            <marker date="1467724767218" expanded="true" signature="144:217" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
