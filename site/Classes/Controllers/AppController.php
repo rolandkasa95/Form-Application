@@ -13,16 +13,17 @@ class AppController
      */
     public $form;
     /**
-     * @var 
+     * @var  \Views\
      */
     public $view;
+    /**
+     * @var \Models\
+     */
     public $models;
 
     /**
      * Initial Controller method
      */
-
-
     public function init()
     {
         $loginController = new LoginController();
@@ -42,7 +43,7 @@ class AppController
             $submit = new submitDataController();
             $submit->Submit();
         }
-        elseif ($_GET && $_GET['action'] === 'logout') {
+        elseif ($_GET && 'logout' === $_GET['action']) {
             $this->logout();
         }
     }
