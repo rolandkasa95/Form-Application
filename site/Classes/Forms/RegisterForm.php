@@ -9,6 +9,10 @@ use Controllers\configController;
 class RegisterForm extends FormCommon implements FormInterface
 {
     /**
+     * RegisterForm constructor.
+     *
+     * This constructor sets the fields taken from
+     * FormBase to the RegisterForm output.
      * @param $models
      */
     public function __construct($models)

@@ -9,10 +9,25 @@ use Forms\Inputs\Text;
  */
 abstract class FormBase
 {
+    /**
+     * @var array
+     */
     public $models = [];
+    /**
+     * @var array|null
+     */
     public $config = [];
+    /**
+     * @var array
+     */
     protected $fields = [];
+    /**
+     * @var array, $_GET, $_POST
+     */
     protected $data;
+    /**
+     * @var bool
+     */
     public $isValid = false;
 
     /**
@@ -67,6 +82,9 @@ abstract class FormBase
     }
 
     /**
+     * This function checks the type
+     * of the input and sets the field for themm
+     *
      * @param $field
      * @return Checkbox|Hidden|Select|string|Submit|Text
      */

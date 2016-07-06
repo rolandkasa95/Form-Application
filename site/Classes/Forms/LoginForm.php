@@ -7,6 +7,11 @@ namespace Forms;
 class LoginForm extends FormCommon implements FormInterface
 {
     /**
+     * LoginForm constructor.
+     *
+     * This constructor sets the fields which was taken
+     * from the FormBase.
+     * 
      * @param $models
      */
     public function __construct($models)

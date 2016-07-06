@@ -7,6 +7,10 @@ namespace Forms;
 abstract class FormCommon extends FormBase
 {
     /**
+     * This function adds a token to the user,
+     * whenever enters the site, for keeping out,
+     * unwanted guests (CSRF protection)
+     *
      * @param $models
      * @param array $params
      * @internal param $model

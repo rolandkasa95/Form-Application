@@ -6,5 +6,9 @@ namespace Forms;
  */
 interface FormInterface
 {
+    /**
+     * FormInterface constructor.
+     * @param $models 
+     */
     public function __construct($models);
 }
