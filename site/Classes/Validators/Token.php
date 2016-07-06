@@ -7,6 +7,9 @@ namespace Validators;
 class Token implements ValidatorInterface
 {
     /**
+     * If the token is equal to the session token returns true,
+     * otherwise false
+     *
      * @param null $value
      * @return bool
      */

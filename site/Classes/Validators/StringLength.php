@@ -6,7 +6,13 @@ namespace Validators;
  */
 class StringLength implements ValidatorInterface
 {
+    /**
+     * @var $minimum, characters
+     */
     public $minimum;
+    /**
+     * @var $maximum , characters
+     */
     public $maximum;
 
     /**
