@@ -5,8 +5,13 @@ namespace Views;
  * View Class
  */
 class View {
+    /**
+     * @var string
+     */
     public $results;
-    
+    /**
+     * @var object 
+     */
     private $form;
 
     /**

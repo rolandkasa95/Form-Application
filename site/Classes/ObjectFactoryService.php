@@ -6,9 +6,25 @@
  */
 abstract class ObjectFactoryService
 {
+    /**
+     * Database object
+     * @var object
+     */
     public static $pdo;
+    /**
+     * Session object
+     * @var object
+     */
     public static $session;
+    /**
+     *  Config array
+     * @var array
+     */
     public static $config;
+    /**
+     * Models array
+     * @var array
+     */
     public static $models = [];
 
     
@@ -52,6 +68,11 @@ abstract class ObjectFactoryService
         return require 'Config/configLoader.php';
     }
 
+    /**
+     * Getter for Session
+     *
+     * @return Session
+     */
     public static function getSession()
     {
         if (!self::$session) {
