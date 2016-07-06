@@ -6,6 +6,9 @@ namespace Forms\Inputs;
  */
 class Text extends BaseInput implements InputInterface
 {
+    /**
+     * Text constructor.
+     */
     public function __construct(){
         $this->type = 'text';
         $this->required = false;

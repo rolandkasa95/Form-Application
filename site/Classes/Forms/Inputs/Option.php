@@ -6,10 +6,25 @@ namespace Forms\Inputs;
  */
 class Option
 {
+    /**
+     * @var string
+     */
     protected $label;
+    /**
+     * @var bool
+     */
     protected $disabled = false;
+    /**
+     * @var bool
+     */
     protected $selected = false;
+    /**
+     * @var string
+     */
     protected $value;
+    /**
+     * @var string
+     */
     protected $optionString;
 
     /**

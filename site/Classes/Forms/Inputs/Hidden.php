@@ -6,6 +6,9 @@ namespace Forms\Inputs;
  */
 class Hidden extends BaseInput implements InputInterface
 {
+    /**
+     * Hidden constructor.
+     */
     public function __construct(){
         $this->type = 'hidden';
     }

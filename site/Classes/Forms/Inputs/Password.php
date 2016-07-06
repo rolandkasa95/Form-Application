@@ -6,6 +6,9 @@ namespace Forms\Inputs;
  */
 class Password extends BaseInput implements InputInterface
 {
+    /**
+     * Password constructor.
+     */
     public function __construct(){
         $this->type = 'password';
         $this->required = true;

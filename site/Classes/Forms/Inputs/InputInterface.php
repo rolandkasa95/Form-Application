@@ -6,6 +6,13 @@ namespace Forms\Inputs;
  */
 interface InputInterface
 {
+    /**
+     * InputInterface constructor.
+     */
     public function __construct();
+
+    /**
+     * @return string
+     */
     public function getInput();
 }

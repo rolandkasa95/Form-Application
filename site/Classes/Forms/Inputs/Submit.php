@@ -6,6 +6,9 @@ namespace Forms\Inputs;
  */
 class Submit extends BaseInput implements InputInterface
 {
+    /**
+     * Submit constructor.
+     */
     public function __construct()
     {
         $this->type = 'submit';

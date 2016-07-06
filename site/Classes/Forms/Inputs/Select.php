@@ -6,9 +6,18 @@ namespace Forms\Inputs;
  */
 class Select extends BaseInput implements InputInterface
 {
+    /**
+     * @var bool
+     */
     protected $multiple = false;
+    /**
+     * @var array
+     */
     protected $options = [];
 
+    /**
+     * Select constructor.
+     */
     public function __construct(){
         $this->valid = false;
         $this->required = false;
