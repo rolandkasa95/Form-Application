@@ -37,6 +37,9 @@ class UserModel implements ModelInterface
     }
 
     /**
+     * This function verifies that the user
+     * is in a database: login!
+     *
      * @param array $data
      * @return mixed
      */
@@ -58,6 +61,9 @@ class UserModel implements ModelInterface
     }
 
     /**
+     * This function saves the new user,
+     * which was given by the registration section
+     *
      * @param $data
      */
     public function saveUser($data)

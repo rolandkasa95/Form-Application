@@ -20,6 +20,9 @@ class CountryModel implements ModelInterface
     }
 
     /**
+     * This function gets the name field,
+     * of the country table from the dbname database.
+     *
      * @return mixed
      */
     public function getCountries(){
@@ -36,6 +39,13 @@ class CountryModel implements ModelInterface
         }
     }
 
+    /**
+     * This function gets the inhabits field,
+     * of the country table from the dbname database.
+     *
+     * @param $result
+     * @return array
+     */
     public function getCountriesInhabits($result){
         $sql = 'SELECT inhabits from country WHERE name=\"' . $result . "\"";
         try{

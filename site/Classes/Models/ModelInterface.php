@@ -6,5 +6,9 @@ namespace Models;
  */
 interface ModelInterface
 {
+    /**
+     * ModelInterface constructor.
+     * @param $pdo
+     */
     public function __construct($pdo);
 }
