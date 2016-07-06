@@ -6,12 +6,33 @@ namespace Forms\Inputs;
  * Abstract BaseInput Class
  */
 abstract class BaseInput{
+    /**
+     * @var string
+     */
     protected $type;
+    /**
+     * @var string
+     */
     protected $name;
+    /**
+     * @var string
+     */
     protected $label;
+    /**
+     * @var string
+     */
     protected $value;
+    /**
+     * @var boolean
+     */
     protected $required;
+    /**
+     * @var boolean
+     */
     protected $valid;
+    /**
+     * @var string
+     */
     protected $validators;
 
     /**

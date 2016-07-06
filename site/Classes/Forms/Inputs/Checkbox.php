@@ -6,8 +6,14 @@ namespace Forms\Inputs;
  */
 class Checkbox extends BaseInput implements InputInterface
 {
+    /**
+     * @var string
+     */
     public $valueString;
 
+    /**
+     * Checkbox constructor.
+     */
     public function __construct(){
         $this->type = 'checkbox';
         $this->value = true;
