@@ -6,9 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1fdf80e-414f-4f8b-b710-ed99b6d68805" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Alnum.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/AlnumValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Alpha.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/AlphaValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Boolean.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/BooleanValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Duplication.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/DuplicationValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Email.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/EmailValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/InArray.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/InArrayValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Required.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/RequiredValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/StringLength.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/StringLengthValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/site/Classes/Validators/Token.php" afterPath="$PROJECT_DIR$/site/Classes/Validators/TokenValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" afterPath="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Classes/Views/View.php" afterPath="$PROJECT_DIR$/site/Classes/Views/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/Layouts/register.php" afterPath="$PROJECT_DIR$/site/Layouts/register.php" />
     </list>
     <list id="af462dcb-c639-4a89-af6c-23e3a6c684dd" name="Rejected commit: Default" comment="New: init function added, aoutoloads the paths given by the config file&#10;" />
     <ignored path="empty-for-roland.iws" />
@@ -31,68 +39,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Duplication.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Duplication.php">
+      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="308">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1699">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Layouts/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
-                <marker date="1467799014086" expanded="true" signature="617:659" ph="SELECT name users" />
-                <marker date="1467799014086" expanded="true" signature="617:660" ph="SELECT name users" />
-                <marker date="1467799014086" expanded="true" signature="617:673" ph="SELECT name users" />
-                <marker date="1467799014086" expanded="true" signature="617:675" ph="SELECT usern... users" />
-                <marker date="1467799014086" expanded="true" signature="617:676" ph="SELECT name users" />
-                <marker date="1467799014086" expanded="true" signature="617:723" ph="SELECT name users" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Email.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Email.php">
+      <file leaf-file-name="FormBase.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="443">
+              <caret line="185" column="49" selection-start-line="185" selection-start-column="49" selection-end-line="185" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InArray.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/InArray.php">
+      <file leaf-file-name="welcome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Layouts/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Required.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Required.php">
+      <file leaf-file-name="thanks.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/Layouts/thanks.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringLength.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/StringLength.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Token.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Token.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -121,14 +124,14 @@
       <file leaf-file-name="ObjectFactoryService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="-270">
               <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Session.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Classes/Session.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -157,7 +160,6 @@
         <option value="$PROJECT_DIR$/site/Config/config.php" />
         <option value="$PROJECT_DIR$/site/Config/configLoader.php" />
         <option value="$PROJECT_DIR$/site/Layouts/login.php" />
-        <option value="$PROJECT_DIR$/site/Layouts/register.php" />
         <option value="$PROJECT_DIR$/site/Classes/Validators/Alpha.php" />
         <option value="$PROJECT_DIR$/site/Classes/Session.php" />
         <option value="$PROJECT_DIR$/site/Loader.php" />
@@ -197,6 +199,7 @@
         <option value="$PROJECT_DIR$/site/Classes/Validators/ValidatorInterface.php" />
         <option value="$PROJECT_DIR$/site/Classes/Views/View.php" />
         <option value="$PROJECT_DIR$/site/Classes/ObjectFactoryService.php" />
+        <option value="$PROJECT_DIR$/site/Layouts/register.php" />
       </list>
     </option>
   </component>
@@ -526,14 +529,7 @@
       <workItem from="1467370145514" duration="4000" />
       <workItem from="1467402008779" duration="2682000" />
       <workItem from="1467630014031" duration="26506000" />
-      <workItem from="1467798092172" duration="1260000" />
-    </task>
-    <task id="LOCAL-00063" summary="New: added Input/Options: isSelected + setSelected + getName + setName">
-      <created>1467205783523</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1467205783523</updated>
+      <workItem from="1467798092172" duration="2023000" />
     </task>
     <task id="LOCAL-00064" summary="New: added Input/Password">
       <created>1467205960176</created>
@@ -871,11 +867,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467799218883</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Update: DocBlock added for Classes/">
+      <created>1467799359613</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1467799359613</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68704000" />
+    <option name="totallyTimeSpent" value="69467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,9 +891,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614152" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614152" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -942,7 +945,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New: Added RegisterController" />
     <MESSAGE value="New: Added RegisterController: init + register" />
     <MESSAGE value="New: Added configController" />
     <MESSAGE value="Update: fixed getModels issue" />
@@ -967,7 +969,8 @@
     <MESSAGE value="Update: DocBlock added for Forms" />
     <MESSAGE value="Update: DocBlock added for Models" />
     <MESSAGE value="Update: DocBlock added for Validators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: DocBlock added for Validators" />
+    <MESSAGE value="Update: DocBlock added for Classes/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: DocBlock added for Classes/" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -986,13 +989,6 @@
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormInteface.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/BaseInput.php" />
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/Input/Hidden.php" />
-    <entry file="file://$PROJECT_DIR$/site/Layouts/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://PHP/\Loader">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1008,13 +1004,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Layouts/welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1074,22 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Layouts/thanks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1055">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1198,14 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormCommon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1226,14 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1699">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1274,7 +1231,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Alnum.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/AlnumValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
@@ -1282,7 +1239,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Alpha.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/AlphaValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="21" />
@@ -1290,7 +1247,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Boolean.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/BooleanValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
@@ -1298,7 +1255,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Duplication.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/DuplicationValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
@@ -1313,7 +1270,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Email.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/EmailValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
@@ -1321,7 +1278,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/InArray.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/InArrayValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
@@ -1329,7 +1286,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Required.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/RequiredValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
@@ -1337,7 +1294,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/StringLength.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/StringLengthValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="839">
           <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
@@ -1345,7 +1302,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/Token.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Validators/TokenValidator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
@@ -1369,18 +1326,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/site/Classes/ObjectFactoryService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="-270">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Classes/Session.php">
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/RegisterForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="-1699">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Layouts/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Layouts/thanks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Layouts/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/Classes/Forms/FormBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="185" column="49" selection-start-line="185" selection-start-column="49" selection-end-line="185" selection-end-column="49" />
           <folding />
         </state>
       </provider>
